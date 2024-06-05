@@ -1,0 +1,22 @@
+.dijitInline {display:inline-block; #zoom: 1; #display:inline; border:0; padding:0; vertical-align:middle; text-align: center !important;}
+.dijitSelect .dijitButtonText {float: left; vertical-align: top;}
+.dijitSelect input.dijitInputField,.dijitTextBox input.dijitInputField {padding-left: 0 !important; padding-right: 0 !important;}
+.dijitValidationTextBox .dijitValidationContainer {display: none;}.dijitTeeny {font-size:1px; line-height:1px;}
+.dijitOffScreen {position: absolute !important; left: -10000px !important; top: -10000px !important;}
+.dijitPopup {position: absolute; background-color: transparent; margin: 0; border: 0; padding: 0; -webkit-overflow-scrolling: touch;}
+.dijitPositionOnly {padding: 0 !important; border: 0 !important; background-color: transparent !important; background-image: none !important; height: auto !important; width: auto !important;}
+.dijitNonPositionOnly {float: none !important; position: static !important; margin: 0 0 0 0 !important; vertical-align: middle !important;}
+.dijitBackgroundIframe {position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; border: 0; padding: 0; margin: 0;}
+.dijitDisplayNone {display:none !important;}.dijitContainer {overflow: hidden;}
+.dj_a11y .dijitIcon,.dj_a11y div.dijitArrowButtonInner, .dj_a11y span.dijitArrowButtonInner,.dj_a11y img.dijitArrowButtonInner,.dj_a11y 
+.dijitCalendarIncrementControl,.dj_a11y .dijitTreeExpando {display: none;}.dijitSpinner div.dijitArrowButtonInner {display: block;}
+.dj_a11y .dijitA11ySideArrow {display: inline !important; cursor: pointer;}.dj_a11y .dijitCalendarDateLabel {padding: 1px; border: 0px !important;}
+.dj_a11y .dijitCalendarSelectedDate .dijitCalendarDateLabel {border-style: solid !important; border-width: 1px !important; padding: 0;}
+.dj_a11y .dijitCalendarDateTemplate {padding-bottom: 0.1em !important; border: 0px !important;}
+.dj_a11y .dijitButtonNode {border: black outset medium !important; padding: 0 !important;}
+.dj_a11y .dijitArrowButton {padding: 0 !important;}.dj_a11y .dijitButtonContents {margin: 0.15em;}
+.dj_a11y .dijitTextBoxReadOnly .dijitInputField,.dj_a11y .dijitTextBoxReadOnly .dijitButtonNode {border-style: outset!important; border-width: medium!important; border-color: #999 !important; color:#999 !important;}
+.dijitButtonNode * {vertical-align: middle;}.dijitSelect .dijitArrowButtonInner,.dijitButtonNode .dijitArrowButtonInner {background: no-repeat center; width: 12px; height: 12px; direction: ltr;}
+.dijitLeft {background-position:left top; background-repeat:no-repeat;}.dijitStretch {white-space:nowrap; background-repeat:repeat-x;}
+.dijitRight {#display:inline; background-position:right top; background-repeat:no-repeat;}.dj_gecko .dj_a11y .dijitButtonDisabled 
+.dijitButtonNode {opacity: 0.5;}.dijitToggleButton,.dijitButton,.dijitDropDownButton,.dijitComboButton {margin: 0; vertical-align: middle;}

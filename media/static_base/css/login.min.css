@@ -1,0 +1,31 @@
+.signup3-wrap{width:100%;height:100vh;background:#FFFFFF;z-index:-1;}
+.signup3-form-holder{position: absolute !important;
+    width: 70%;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: none;}
+  .signup4-left{
+    left: 0;
+    right: 0;
+    margin-top: 5%;/*margin: 10px 0px 0px 0px;*/
+    background: #FFFFFF;
+    box-shadow: none;}
+.login-card{border-radius: 50%;padding:25px}
+.login-card>img{border-radius: 50%;box-shadow: 0 8px 20px rgb(47 60 74 / 31%), 0 8px 16px rgb(47 60 74 / 7%);padding: 20px}
+.login-title{padding: 50px 10px 20px;}.options-title{padding: 40px 10px 40px;}.login-colors{margin: 17px 0px 30px}
+.login-midis{padding: 10px 20px}.login-midis h2{padding-top: 15px}.login-midis h4{padding-top: 5px}
+.opcion-card{border-radius: 50px;padding:25px; text-align: center;}
+.opcion-card>img{border-radius: 30px;box-shadow: 0 8px 20px rgb(47 60 74 / 31%), 0 8px 16px rgb(47 60 74 / 7%);padding: 20px; margin-bottom: 15px}
+.line-midis{height: 33px; width: 100%; border-top: 5px solid #fdd400}
+.opcion-card:hover{box-shadow: 0 8px 20px rgb(47 60 74 / 31%), 0 8px 16px rgb(47 60 74 / 7%);}.menu-midis{padding: 10px 20px;}
+.menu-midis>h3{margin: 0px;}.bg-footer{background: #1493F7 !important}.form-recuperar{display: none}.margin-login{margin: 0px 20px}
+.login-bars{margin:40px 4px 5px 20px !important}.login-bars>div{height: 17px;}
+@media (max-width:500px){
+  .hidden-xs{display: none !important}
+  .header-login{margin-top: 30%;}
+  .opcion-card>img{height: 150px; width: 150px; margin: auto; margin-bottom: 10px;}
+  .custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control{background: none !important}
+}
