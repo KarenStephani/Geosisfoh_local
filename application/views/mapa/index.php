@@ -16,16 +16,25 @@
         <link rel="stylesheet" href="https://js.arcgis.com/3.44/dijit/themes/claro/claro.css">
         <link rel="stylesheet" href="https://js.arcgis.com/3.44/esri/css/esri.css">
         <link rel="stylesheet" href="<?=base_url()?>media/intro_loader/intro_loader.css" />       
-      
-    </head>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        
+
+        <!-- iconoces menu-->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+      </head>
 
     <body>
     <div class="loader-wrapper">
       <div class="loader"></div>
     </div>
         <div class="app-admin-wrap-layout-1 sidebar-full sidebar-theme-slate">
-            <div class="sidebar-panel">
-                <div class="brand">
+            <div class="sidebar-panel" >
+               <!-- <div class="brand">
                     <a href="<?= site_url('App/index') ?>"><img src="<?=base_url()?>media/static_base/img/favicon.png"/> <img src="<?=base_url()?>media/static_base/img/logow-map.png"/><span class="app-logo-text ml-2 text-20">SISFOH</span></a>
                 </div>
 
@@ -35,8 +44,87 @@
 
                     <button type="button" id="clear_map" class="btn btn-success btn-sm"><i class="fas fa-broom"></i> Limpiar</button>
                 </div>
-
+-->
+                <div class="new-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                </div>
+                <!-- nuevo menu -->
                 <div class="side-nav">
+                    <div class="main-menu">
+                        <nav class="sidebar-nav">
+                        <ul class="sidebar-nav" id="sidebar-nav">
+                          <li class="nav-item" >
+                            <a class="nav-link collapsed" data-toggle="tooltip" title="Búsqueda por filtros" href="#">
+                              
+                              <i class="fi fi-rs-search-location fa-2x"></i>
+                            </a>
+                          </li><!-- End Busqueda Filtros -->
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Búsqueda por filtros" href="#">
+                              
+                            <i class="fi fi-sr-land-layers fa-2x"></i> 
+                            </a>
+                          </li><!-- End Capas-->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Búsqueda por filtros" href="#">
+                              
+                            <i class="fi fi-rr-info fa-2x"></i>
+                            </a>
+                          </li><!-- End Información -->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Elevación" href="#">
+                              <i class="fi fi-rs-mountain fa-2x"></i>
+                            </a>
+                          </li><!-- End Elevación -->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramientas de Medir" href="#">
+                            <i class="fi fi-rs-ruler-triangle fa-2x"></i>
+                            </a>
+                          </li><!-- End Herramientas de medir -->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramientas de Selección" href="#">
+                            <i class="fi fi-rs-vector-polygon fa-2x"></i>
+                            </a>
+                          </li><!-- End Herramientas de Selección -->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Descargar Mapa" href="#">
+                            <i class="fi fi-rs-download fa-2x"></i>
+                            </a>
+                          </li><!-- Descarga -->
+
+                          
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Mapas Base" href="#">
+                            <i class="fi fi-rr-world fa-2x"></i>
+                            </a>
+                          </li><!-- Mapas Base -->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Imprimir" href="#">
+                            <i class="fi fi-rr-print  fa-2x" ></i>
+                            </a>
+                          </li><!-- Impresora -->
+
+                          <li class="nav-item">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Descargar Manual" href="#">
+                            <i class="fi fi-rr-book-bookmark fa-2x"></i>
+                            </a>
+                          </li><!-- Manual -->
+
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <div class="side-nav" style="display:none" >
                     <div class="main-menu">
                         <nav class="sidebar-nav">
                             <ul class="show-on-load" id="ul-menu">
@@ -200,7 +288,6 @@
             <div class="main-content-wrap">
                 <div class="ul-mobile-top-header bg-slate">
                   <img class="ul-brand-mobile" src="<?=base_url()?>media/static_base/img/logo.png"/>
-                   <span class="text-white">SISFOH</span>
                     <div class="flex-grow-1"></div>
                     <button class="sidebar-full-toggle btn btn-icon btn-primary rounded-circle text-white">
                         <i class="fas fa-align-justify"></i>
@@ -214,34 +301,54 @@
                 </div>
 
              <header class="main-header bg-card d-flex flex-row justify-content-between align-items-center px-lg">
+                    <div>
+                    <a href="<?= site_url('App/index') ?>"><img src="<?=base_url()?>media/static_base/assets/logo-xs.png"/></a>
+                    </div>
                     <div class="ul-header-topbar-men midis-opcions">
                     <span class="m-0" id="responsivebuscar">
                      <div class="input-group input-group-sm">
-                            <input class="search_query form-control" type="text" name="key_search" id="key_search" placeholder=" Buscar ...">
-                            <span class="input-group-btn">
-                                <div id="idbttom_geo" name="idbttom_geo"  class="btn btn-flat"><i class="fa fa-search icon-a"></i><i style="display: none;" class="fas fa-spinner fa-pulse icon-b"></i></div>
-                            </span>
+                      
+                    
+                     <div class="search-input position-relative">
+                     <input class="search_query form-control" type="text" name="key_search" id="key_search" placeholder=" Buscar ...">
+                     <!--<i class="bi bi-search"></i>-->
+                     <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute top-50 translate-middle-y search-icon" width="25" height="25" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <!-- <span class="input-group-btn">
+                      <div id="idbttom_geo" name="idbttom_geo"  class="btn btn-flat"><i class="fa fa-search icon-a"></i><i style="display: none;" class="fas fa-spinner fa-pulse icon-b"></i></div>
+                     </span>-->
                      </div>                   
                     <div id="suggestions"></div>
                     </span>
                         <button type="button" id="zoom_in" class="btn btn-secondary-sup btn-icon btn-dist custom-tooltip" data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></button>
                         <button type="button" id="zoom_out" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></button>
                         <button type="button" id="peru" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Extensión Predeterminada"></button>
-                        <button type="button" id="btn-indentity" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></button>
+                       <!-- <button type="button" id="btn-indentity" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></button>
                         <button type="button" id="btn-mapas-base" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_gallery" data-tooltip="Galería de Mapas"></button>
                         <button type="button" id="btn-capas-base" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_capas" data-tooltip="Capas"></button>
                         <button type="button" id="btn-report" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_report" data-tooltip="Avance Barrido 2024"><i class="fa fa-chart-bar"></i></button>                       
-                    </div>
-                    <div class="ul-header-topbar">
-                        <div class="flex-grow-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    -->
+                      </div>
+                    <div class="ul-header-topbar text-white">
+                      <div class="flex-grow-1">
+
+                        <i class="fi fi-rs-chart-pie-alt fa-2x"></i>
+                        &nbsp;&nbsp;
+                        <i class="fi fi-rs-map-marker fa-2x"></i>
+
+                    &nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                       <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                       <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     </svg>
-                            <?php
+                    <?php
                             if (empty($user["ubigeos"]['nombre_dist'])) {
                               echo "Nacional";
                             }else{ echo $user["ubigeos"]['nombre_dist'];}
                             ?>
+                        &nbsp;&nbsp;
                         </div>
                         <div class="dropdown">
                             <div class="header-btn-group">
@@ -842,7 +949,7 @@
          var ubigeo_IDDIST ="<?= $user['ubigeos']['iddist'] ?>"; 
 
          var inputElement = document.getElementById("key_search");
-        inputElement.placeholder = " Buscar Por Nombre de Dirección...";
+        inputElement.placeholder = " Buscar por nombre de Dirección...";
 
       <?php }else{ ?>
 
@@ -852,7 +959,7 @@
          var ubigeo_Y_MIN = -19.221502;
 
           var inputElement = document.getElementById("key_search");
-        inputElement.placeholder = " Buscar Por Nombre de Centro Poblado ...";
+        inputElement.placeholder = " Buscar por nombre de Centro Poblado ...  ";
    
 
       <?php } ?>

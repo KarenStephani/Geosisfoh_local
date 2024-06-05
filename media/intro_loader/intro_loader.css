@@ -999,11 +999,14 @@ li.inp-position span {
 #key_search {
   font-size: 100%;
   outline: none;
-  width: 350px;
+  width: 370px;
   height: 41px;
   display: table-cell; 
   vertical-align: middle;
   border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius:5px;
+  padding: 1rem;;
 }
 
 .btn-flat {

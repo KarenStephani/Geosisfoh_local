@@ -157,6 +157,30 @@
 .scroll-mapas-view::-webkit-scrollbar {width: 8px; height: 8px;}
 .scroll-mapas-view::-webkit-scrollbar-thumb {background: #999c9e;border-radius: 0px;}
 
+
+/*nuevas clases*/
+.search-icon{
+    right: 22px;
+    top: 22px;
+ }
+
+ .search-input{
+    box-sizing: border-box;
+    color: #616161;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+
+ }
+ .new-menu{
+    height: 50px;
+    width: 60px;
+    background-color: #034DA0;
+    color:#fff;
+    padding-left: 10px;
+    padding-top: 5px;
+ }
+
+ /*end nuevas clases*/
 .form-login{
   box-shadow: 12px 13px 39px 0 rgb(35 128 240 / 18%);
   box-sizing: border-box;
@@ -198,8 +222,8 @@
 }
 .btn-secondary-sup {
     color: #fff;
-    background-color: #193f57;
-    border-color: #193f57;
+    background-color: #0D166B;
+    border-color: #0D166B;
     box-shadow: none;
 }
 
@@ -462,11 +486,11 @@
 }
 
 :root{
-    --blue:#0081FF;
+    --blue:#034DA0;
     --indigo:#5e5ce6;
     --purple:#7367F0;
     --pink:#ff375f;
-    --red:#FF3D57;
+    --red:#EB1E23;
     --orange:#FF8A48;
     --yellow:#FDBF5E;
     --green:#09B66D;
@@ -475,7 +499,7 @@
     --white:#fff;
     --gray:#828D99;
     --gray-dark:#304156;
-    --primary:#0081FF;
+    --primary:#034DA0;
     --secondary:#304156;
     --success:#09B66D;
     --info:#5e5ce6;
@@ -13214,7 +13238,7 @@ small{
     background-color:#999!important
 }
 .bg-card{
-    background-color:#fff!important
+    background-color:#034DA0!important
 }
 .bg-body{
     background-color:#F2F4F4!important
@@ -18656,7 +18680,7 @@ span.select2-selection{
     background:#fff
 }
 .narrow-sidebar,.sidebar-theme-slate .sidebar-panel{
-    background-color:#242939
+    background-color:#ffffff
 }
 .ul-search-full-width .ul-search-result-area #result_list li a{
     padding-left:1.5rem;
@@ -18934,10 +18958,15 @@ span.select2-selection{
 .sidebar-panel .side-nav .main-menu ul li a{
     display:flex;
     align-items:center;
-    height:45px;
-    padding:0 25px;
+    height:65px;
+    padding: 0 18px !important;
     font-size:13px;
-    border-bottom: 0px solid rgba(0,0,0,.2)
+    border-bottom: 0px solid rgba(0,0,0,.2);
+    color:#034DA0;
+}
+
+.sidebar-panel .side-nav .main-menu ul li a :hover{
+    color:#0d6efd;
 }
 .sidebar-panel .side-nav .main-menu ul li input{
     float: right;
@@ -19160,15 +19189,15 @@ span.select2-selection{
     margin-left:0
 }
 .app-admin-wrap-layout-1.sidebar-full .sidebar-panel{
-    width:260px;
+    width:60px;
     left:0
 }
 .app-admin-wrap-layout-1.sidebar-full .main-content-wrap{
-    width:calc(100% - 260px);
-    margin-left:260px
+    width:calc(100% - 60px);
+    margin-left:60px
 }
 .app-admin-wrap-layout-1.sidebar-full .main-content-wrap.secondary-sidebar-close{
-    width:calc(100% - 260px)
+    width:calc(100% - 60px)
 }
 .app-admin-wrap-layout-1.sidebar-full.sidebar-compact-onhover .main-content-wrap{
     width:calc(100% - 54px);
