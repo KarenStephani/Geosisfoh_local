@@ -322,7 +322,9 @@
                      </div>                   
                     <div id="suggestions"></div>
                     </span>
-                        <button type="button" id="zoom_in" class="btn btn-secondary-sup btn-icon btn-dist custom-tooltip" data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></button>
+                    <button type="button" id="plus" class="btn btn-secondary-sup btn-icon btn-dist custom-tooltip" data-tooltip="Zoom Más"><i class="fa fa-plus"></i></button>
+                        <button type="button" id="minus" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Zoom Menos"><i class="fa fa-minus"></i></button>
+                        <button type="button" id="zoom_in" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></button>
                         <button type="button" id="zoom_out" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></button>
                         <button type="button" id="peru" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Extensión Predeterminada"></button>
                        <!-- <button type="button" id="btn-indentity" class="btn btn-secondary-sup btn-icon custom-tooltip" data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></button>
