@@ -7,26 +7,26 @@
         <meta name="author" content="" />
         <title>MIDIS - GEOSISFOH - Iniciar Sesión</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="media/static_base/assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="media/new_front/assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="media/static_base/css/styles.css" rel="stylesheet" />
+        <link href="media/new_front/css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <div class="col-3">
-                    <img class="img-fluid" src="<?= base_url() ?>media/static_base/img/logo-midis.png"  style="max-width: 50%; height: auto;" alt="..." />
+                    <img class="img-fluid" src="<?= base_url() ?>media/new_front/img/logo-midis.png"  style="max-width: 50%; height: auto;" alt="..." />
                 </div>
                 <div class="col-3">
-                    <img class="img-fluid" src="media/static_base/assets/punche_peru.png"  style="max-width: 50%; height: auto;"  alt="..." />
+                    <img class="img-fluid" src="media/new_front/assets/punche_peru.png"  style="max-width: 50%; height: auto;"  alt="..." />
                 </div>
                 <div class="col-3">
-                    <img class="img-fluid" src="media/static_base/assets/Bicentenario_2024.png"  style="max-width: 50%; height: auto;" alt="..." />
+                    <img class="img-fluid" src="media/new_front/assets/Bicentenario_2024.png"  style="max-width: 50%; height: auto;" alt="..." />
                 </div>
             </div>
         </nav>
@@ -37,7 +37,7 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <img class="img-fluid rounded-circle mb-3" src="media/static_base/assets/logo.png" alt="..." />
+                            <img class="img-fluid rounded-circle mb-3" src="media/new_front/assets/logo.png" alt="..." />
                             <!-- Signup form-->
                             <?php $action_url = site_url('AppLogin/index');  $encrypted_url = base64_encode($action_url);  ?>
                             <form class="sign-in-form" id="frm_login" name="frm_login" data-action="<?= $encrypted_url ?>" method="post" autocomplete="off">
@@ -80,7 +80,7 @@
             <section class="showcase">
                 <div class="container-fluid p-0">
                     <div class="row g-0">
-                        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('media/static_base/assets/busqueda.png')"></div>
+                        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('media/new_front/assets/busqueda.png')"></div>
                         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                             <h2>GEOSISFOH</h2>
                             <p class="lead mb-0">Bienvenidos al Geo portal con información cartográfica de hogares integrados por
@@ -163,7 +163,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="media/static_base/js/scripts.js"></script>
+        <script src="media/new_front/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
