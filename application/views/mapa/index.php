@@ -7,35 +7,37 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <title>MIDIS | Bienvenido al sistema</title>
-        <link rel="shortcut icon" href="<?=base_url()?>media/static_base/img/favicon.png">
-        <link rel="stylesheet" href="<?=base_url()?>media/static_base/css/font.min.css" />
-        <link rel="stylesheet" href="<?=base_url()?>media/static_base/css/vendors.min.css" />
-        <link rel="stylesheet" href="<?=base_url()?>media/static_base/css/github.min.css" />
-        <link rel="stylesheet" href="<?=base_url()?>media/static_base/css/main.min.css" />        
+        <link rel="shortcut icon" href="<?=base_url()?>media/new_front/img/favicon.png">
+        <link rel="stylesheet" href="<?=base_url()?>media/new_front/css/font.min.css" />
+        <link rel="stylesheet" href="<?=base_url()?>media/new_front/css/vendors.min.css" />
+        <link rel="stylesheet" href="<?=base_url()?>media/new_front/css/github.min.css" />
+        <link rel="stylesheet" href="<?=base_url()?>media/new_front/css/main.min.css" />        
         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="https://js.arcgis.com/3.44/dijit/themes/claro/claro.css">
         <link rel="stylesheet" href="https://js.arcgis.com/3.44/esri/css/esri.css">
         <link rel="stylesheet" href="<?=base_url()?>media/intro_loader/intro_loader.css" />       
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-        
 
+        <!-- Bootstrap 4
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        -->
         <!-- iconoces menu-->
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='<?=base_url()?>media/new_front/css/icons/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='<?=base_url()?>media/new_front/css/icons/uicons-thin-straight.css'>
+        <link rel='stylesheet' href='<?=base_url()?>media/new_front/css/icons/uicons-thin-rounded.css'>
+        <link rel='stylesheet' href='<?=base_url()?>media/new_front/css/icons/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='<?=base_url()?>media/new_front/css/icons/uicons-thin-rounded.css'>
+        <link rel='stylesheet' href='<?=base_url()?>media/new_front/css/icons/uicons-regular-rounded.css'>  
       </head>
 
     <body>
     <div class="loader-wrapper">
       <div class="loader"></div>
     </div>
-        <div class="app-admin-wrap-layout-1 sidebar-full sidebar-theme-slate">
-            <div class="sidebar-panel" >
+    <div class="app-admin-wrap-layout-1 sidebar-full sidebar-theme-slate">        
+      <div class="sidebar-panel" >
                <!-- <div class="brand">
-                    <a href="<?= site_url('App/index') ?>"><img src="<?=base_url()?>media/static_base/img/favicon.png"/> <img src="<?=base_url()?>media/static_base/img/logow-map.png"/><span class="app-logo-text ml-2 text-20">SISFOH</span></a>
+                    <a href="<?= site_url('App/index') ?>"><img src="<?=base_url()?>media/new_front/img/favicon.png"/> <img src="<?=base_url()?>media/new_front/img/logow-map.png"/><span class="app-logo-text ml-2 text-20">SISFOH</span></a>
                 </div>
 
                 <div class="sidebar-compact-switch"><span></span> <div></div><span></span> </div>
@@ -45,50 +47,48 @@
                     <button type="button" id="clear_map" class="btn btn-success btn-sm"><i class="fas fa-broom"></i> Limpiar</button>
                 </div>
 -->
-                <div class="new-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                </svg>
-                </div>
+        <div class="new-menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+        </div>
                 <!-- nuevo menu -->
                 <div class="side-nav">
                     <div class="main-menu">
-                        <nav class="sidebar-nav">
+                      <nav class="sidebar-nav">
                         <ul class="sidebar-nav" id="sidebar-nav">
-                          <li class="nav-item" >
-                            <a class="nav-link collapsed" data-toggle="tooltip" title="Búsqueda por filtros" href="#">
-                              
-                              <i class="fi fi-rs-search-location fa-2x"></i>
-                            </a>
+                          <li class="nav-item" id="liFiltros" >
+                          <a class="nav-link collapsed active"  data-toggle="tooltip"  title="Búsqueda por filtros" onclick="abrirlModalBusqueda()" >       
+                            <i class="fi fi-rs-search-location fa-2x"></i>
+                          </a>
                           </li><!-- End Busqueda Filtros -->
                           <li class="nav-item">
-                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Búsqueda por filtros" href="#">
-                              
+                            <a class="nav-link collapsed"  data-toggle="tooltip" abrirlModalCapas   title="Capas" onclick="abrirlModalCapas()" >
                             <i class="fi fi-sr-land-layers fa-2x"></i> 
                             </a>
                           </li><!-- End Capas-->
 
                           <li class="nav-item">
-                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Búsqueda por filtros" href="#">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Info de zonas y Manzanas" onclick="abrirlModalInformacion()">
                               
                             <i class="fi fi-rr-info fa-2x"></i>
                             </a>
                           </li><!-- End Información -->
 
                           <li class="nav-item">
-                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Elevación" href="#">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramienta de Elevación" onclick="abrirlModalElevacion()">
                               <i class="fi fi-rs-mountain fa-2x"></i>
                             </a>
                           </li><!-- End Elevación -->
 
                           <li class="nav-item">
-                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramientas de Medir" href="#">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramienta Medir" onclick="abrirlModalMedicion()">
                             <i class="fi fi-rs-ruler-triangle fa-2x"></i>
                             </a>
                           </li><!-- End Herramientas de medir -->
 
                           <li class="nav-item">
-                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramientas de Selección" href="#">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Herramienta de Selección" onclick="abrirlModalSeleccionar()">
                             <i class="fi fi-rs-vector-polygon fa-2x"></i>
                             </a>
                           </li><!-- End Herramientas de Selección -->
@@ -101,7 +101,7 @@
 
                           
                           <li class="nav-item">
-                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Mapas Base" href="#">
+                            <a class="nav-link collapsed"  data-toggle="tooltip" title="Galeria de Mapas Base" href="#">
                             <i class="fi fi-rr-world fa-2x"></i>
                             </a>
                           </li><!-- Mapas Base -->
@@ -118,8 +118,8 @@
                             </a>
                           </li><!-- Manual -->
 
-                          </ul>
-                        </nav>
+                        </ul>
+                      </nav>
                     </div>
                 </div>
 
@@ -213,7 +213,7 @@
                                                 </select>
                                             </div>                                           
                                         
-                                    </div> 
+                        </div> 
                               
                               <div class="tab-pane fade" id="layer" role="tabpanel" aria-labelledby="layer-tab">
 
@@ -240,14 +240,14 @@
                                         <li>
                                             <a href="#"><i class="fa fa-users"></i> <span> Programa Juntos</span></a>
                                             <input type="checkbox" name="PJuntos" value="PJuntos">
-                                            <div style="display: none;" id="leyen_PJuntos" class="PJuntos"><img src="<?=base_url()?>media/static_base/img/avatars/ylw-circle.png"/><span>Programa Juntos</span> </div>
+                                            <div style="display: none;" id="leyen_PJuntos" class="PJuntos"><img src="<?=base_url()?>media/new_front/img/avatars/ylw-circle.png"/><span>Programa Juntos</span> </div>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fas fa-baby"></i> <span> Programa Cuna Más</span></a>
                                             <input type="checkbox" name="PCM" value="PCM">
                                             <div style="display: none;" id="leyen_cuna_mas" class="cunamas">
-                                            <img src="<?=base_url()?>media/static_base/img/avatars/markercuna.png"/><span>Locales CIAI</span><br> 
-                                            <img src="<?=base_url()?>media/static_base/img/avatars/wht-circle.png"/><span>Locales SA</span>
+                                            <img src="<?=base_url()?>media/new_front/img/avatars/markercuna.png"/><span>Locales CIAI</span><br> 
+                                            <img src="<?=base_url()?>media/new_front/img/avatars/wht-circle.png"/><span>Locales SA</span>
                                            </div>                                            
                                         </li>
                                      </ul>                                       
@@ -283,11 +283,13 @@
                         </nav>
                     </div>
                 </div>
-            </div>
+          </div>
 
-            <div class="main-content-wrap">
+          <div class="main-content-wrap">
+
+            
                 <div class="ul-mobile-top-header bg-slate">
-                  <img class="ul-brand-mobile" src="<?=base_url()?>media/static_base/img/logo.png"/>
+                  <img class="ul-brand-mobile" src="<?=base_url()?>media/new_front/img/logo.png"/>
                     <div class="flex-grow-1"></div>
                     <button class="sidebar-full-toggle btn btn-icon btn-primary rounded-circle text-white">
                         <i class="fas fa-align-justify"></i>
@@ -302,7 +304,7 @@
 
              <header class="main-header bg-card d-flex flex-row justify-content-between align-items-center px-lg">
                     <div>
-                    <a href="<?= site_url('App/index') ?>"><img src="<?=base_url()?>media/static_base/assets/logo-xs.png"/></a>
+                    <a href="<?= site_url('App/index') ?>"><img src="<?=base_url()?>media/new_front/assets/logo-xs.png"/></a>
                     </div>
                     <div class="ul-header-topbar-men midis-opcions">
                     <span class="m-0" id="responsivebuscar">
@@ -355,11 +357,11 @@
                         <div class="dropdown">
                             <div class="header-btn-group">
                                 <button class="btn btn-opacity-default rounded-circle btn-icon" type="button" data-toggle="dropdown">
-                                    <img class="avatar-xs rounded-circle" src="<?=base_url()?>media/static_base/img/avatar.png" alt="" />
+                                    <img class="avatar-xs rounded-circle" src="<?=base_url()?>media/new_front/img/avatar.png" alt="" />
                                 </button>
                                 <div class="dropdown-menu">
                                     <div class="text-center">
-                                        <img src="<?=base_url()?>media/static_base/img/avatar.png" height="40px"> <br> <br>
+                                        <img src="<?=base_url()?>media/new_front/img/avatar.png" height="40px"> <br> <br>
                                         <h4><?= ucfirst($user['nombreUsuario']) ?></h4>
                                         <p><?= ucfirst($user['paternoUsuario']) ?></p>
                                         <p><?= ucfirst($user['maternoUsuario']) ?></p>
@@ -620,7 +622,7 @@
                       <div class="titulo-one">Meta Empadronamiento</div>
                       <div class="contenedor-reporty">
                           <div class="icono">
-                            <img src="<?=base_url()?>media/static_base/img/geo.jpg" alt="" />
+                            <img src="<?=base_url()?>media/new_front/img/geo.jpg" alt="" />
                           </div>
                           <div class="dato-estadistico">
                             <p class="titulo">Meta de Hogares</p>
@@ -631,7 +633,7 @@
                         <div class="titulo-one">Avance Georreferenciación</div>
                         <div class="contenedor-reporty">
                           <div class="icono">
-                            <img src="<?=base_url()?>media/static_base/img/georref.png" alt="" />
+                            <img src="<?=base_url()?>media/new_front/img/georref.png" alt="" />
                           </div>
                           <div class="dato-estadistico">
                             <p class="titulo">Cobertura de Hogares </p>
@@ -641,7 +643,7 @@
                          <div class="titulo-one">% de Georreferenciación</div>
                         <div class="contenedor-reporty">
                           <div class="icono">
-                            <img src="<?=base_url()?>media/static_base/img/porct.png" alt="" />
+                            <img src="<?=base_url()?>media/new_front/img/porct.png" alt="" />
                           </div>
                           <div class="dato-estadistico">
                             <p class="dato" id="dato-porcentaje"></p>
@@ -689,7 +691,260 @@
 
     </div>
 
-    <script src="<?=base_url()?>media/static_base/js/xlsx.full.min.js"></script>
+  <!-- dragable modal filtros -->
+  <div class="modal fade dragable_modal" id="modalFiltros" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header w-100">
+            <div class="row m-0 w-100">
+              <div class="col-md-12 px-4 p-2 dragable_touch d-block">
+                <h5 class="m-0 d-inline"><i class="fi fi-ts-search-location"></i> Filtro Límites</h5>
+                <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-3">
+          <div class="form-group">
+          <label class="formulario">Departamento</label>
+                                                <?php if($user["es_municipal"] == true){ ?>
+
+                                                <input class="form-control form-line" value="<?= $user['ubigeos']['nom_dpto'] ?>" readonly>
+                                                <input id="ccdep" type="hidden" value="<?= $user['ubigeos']['coddpto'] ?>" name="code" readonly/>
+
+                                                     <?php } else{?>
+                                                
+                                                <select id="ccdep" class="form-control form-line">
+                                                    <option>Seleccione . . .</option>
+                                                     <?php foreach ($departamentos as $deps) { ?>
+                                                    <option value="<?php echo $deps['coddpto']; ?>"><?php echo strtoupper($deps['nom_dpto']); ?></option>
+                                                    <?php  } ?>
+                                                </select>
+
+                                                <?php  } ?>
+
+          </div>
+          <div class="form-group">
+          <label class="formulario">Provincia</label>
+                                                 <?php if($user["es_municipal"] == true){ ?>
+                                                  <input class="form-control form-line" value="<?= $user['ubigeos']['nom_prov'] ?>" readonly>
+                                                  <input id="ccprov" type="hidden" value="<?= $user['ubigeos']['codprov'] ?>" name="code" readonly/>
+                                                 <?php }else{ ?>
+                                                <select id="ccprov" class="form-control form-line">
+                                                    <option>Seleccione . . .</option>               
+                                                </select>
+                                                <?php }?>
+          </div>
+          <div class="form-group">
+          <label class="formularioy">Distrito</label>
+                                                <?php if($user["es_municipal"] == true){ ?>
+                                                 <input class="form-control form-line" value="<?= $user['ubigeos']['nombre_dist'] ?>" readonly>
+                                                 <input type="hidden" id="ccdist" value="<?= $user['ubigeos']['iddist'] ?>" name="code" readonly/>
+                                                 <?php }else{ ?>
+                                                <select id="ccdist" class="form-control form-line">
+                                                    <option>Seleccione . . .</option>
+                                                </select>
+                                                 <?php }?>
+          </div>
+          <div class="form-group">
+          <label class="formulario">Centros Poblados</label>
+                                                <select id="ccpoblado" class="form-control form-line">
+                                                    <option>Seleccione . . .</option>
+                                                    <?php if (isset($centros_poblado)) { ?>
+                                                    <?php foreach ($centros_poblado as $ccpp) { ?>
+                                                        <option value="<?php echo $ccpp['codccpp']; ?>"><?php echo strtoupper($ccpp['centropoblado']); ?></option>
+                                                     <?php  } }?>
+                                          
+                                                </select>
+           </div> 
+                <!-- <div class="form-group">
+                        <label class="formulario">Departamento</label>
+                        <select class="form-control"><option>LIMA</option></select>
+                        <label class="formulario">Provincia</label>
+                        <select class="form-control"><option>LIMA</option></select>
+                        <label class="formularioy">Distrito</label>
+                        <select class="form-control"><option>LIMA</option></select>
+                        <label class="formulario">Centros Poblados</label>
+                        <select class="form-control"><option>Seleccionar</option></select>
+                </div>-->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row w-100">
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary">Buscar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+
+  <!-- dragable modal capas -->
+  <div class="modal fade dragable_modal" id="modalCapas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header w-100">
+            <div class="row m-0 w-100">
+              <div class="col-md-12 px-4 p-2 dragable_touch d-block">
+              <h5 class="modal-title"><i class="fi fi-sr-land-layers"></i> Capas</h5>
+              <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-3">
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">Cartografía censal (INEI)</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block ">Estratos por niveles de ingresos (INEI)</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">Zonas de expansión urbana (MIDIS)</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">Servicios de Salud (MINSA)</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">Instituciones educativas(MINEDU)</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">SISFOH-PGH georreferenciado (MIDIS)</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">CENEPRED</button></div>
+                      <div class="row m-1"> <button type="button" class="btn btn-secondary btn-block">Empradronamiento masivo 2023 (DU 029-2023)</button></div>
+                    </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row w-100">
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary">Buscar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+
+    <!-- dragable modal información -->
+  <div class="modal fade dragable_modal" id="modalInformacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header w-100">
+            <div class="row m-0 w-100">
+              <div class="col-md-12 px-4 p-2 dragable_touch d-block">
+              <h5 class="modal-title"><i class="fi fi-rr-info"></i> Información</h5>
+                <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-3">
+            <p><b>CCPP:Bagua Grande</b></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <div class="row w-100">
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary">Buscar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+    <!-- dragable modal Medir -->
+    <div class="modal fade dragable_modal" id="modalMedicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header w-100">
+            <div class="row m-0 w-100">
+              <div class="col-md-12 px-4 p-2 dragable_touch d-block">
+              <h5 class="modal-title"><i class="fi fi-tr-ruler-triangle"></i> Herramientas de Medir</h5>
+                <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-3">
+          <div class="form">
+          <label class="formulario">Herramienta</label>
+          
+          <select class="form-control"><option>Seleccionar</option></select>>
+        </div>    
+          </div>
+          <div class="modal-footer">
+            <div class="row w-100">
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+   <!-- dragable modal Herramientas de Elevación -->
+   <div class="modal fade dragable_modal" id="modalElevacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header w-100">
+            <div class="row m-0 w-100">
+              <div class="col-md-12 px-4 p-2 dragable_touch d-block">
+              <h5 class="modal-title"><i class="fi fi-rs-mountain"></i> Elevación</h5>
+                <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-3">
+                <p>Contenido para elevación</p>
+              <p>Contenido para elevación</p>
+              <p>Contenido para elevación</p>
+              <p>Contenido para elevación</p>
+              <p>Contenido para elevación</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row w-100">
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary">Buscar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+  <!-- dragable modal Herramientas de Seleccionar -->
+  <div class="modal fade dragable_modal" id="modalSeleccionar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header w-100">
+            <div class="row m-0 w-100">
+              <div class="col-md-12 px-4 p-2 dragable_touch d-block">
+              <h5 class="modal-title"><i class="fi fi-tr-vector-polygon"></i> Herramientas de Selección</h5>
+                <button type="button" class="close close_btn" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-3">
+          <div class="form-group align-items-center">
+          <br>
+          <br>
+          <br>
+          <br>
+          <select class="form-control"><option>Todos los Georref...</option></select>
+          <br>
+        </div>   
+                    
+          </div>
+          <div class="modal-footer">
+            <div class="row w-100">
+              <div class="col-6 text-right">
+                <button type="button" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+    <script src="<?=base_url()?>media/new_front/js/xlsx.full.min.js"></script>
     <script>
   
         function exportarExcel() {
@@ -729,10 +984,16 @@
             }
         ]};
       </script>
-        <script src="<?=base_url()?>media/static_base/js/vendors.min.js"></script>
-        <script src="<?=base_url()?>media/static_base/js/main.min.js"></script>
-        <script src="<?=base_url()?>media/static_base/js/highlight.min.js"> </script>
-        <script src="<?=base_url()?>media/static_base/js/script.min.js"></script>
+         
+    <!-- <script src="static/js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+       <!-- <script src="<?=base_url()?>media/new_front/js/vendors.min.js"></script>-->
+        <script src="<?=base_url()?>media/new_front/js/main.min.js"></script>
+        <script src="<?=base_url()?>media/new_front/js/highlight.min.js"> </script>
+        <script src="<?=base_url()?>media/new_front/js/script.min.js"></script>
         <script src="<?= base_url() ?>media/static_admin/assets/vendor/bootbox.min.js"></script>  
         <script src="<?= base_url() ?>media/static_admin/assets/vendor/datatables/jquery.dataTables.min.js"></script>
         <script src="https://js.arcgis.com/3.44/"></script>
@@ -975,6 +1236,136 @@
 
         <?php }?>
     
-       
+
+      <!-- scripts frontend  -->
+      <script type="text/javascript">
+
+
+      function abrirlModalBusqueda() {
+        $("#liFiltros").addClass("li_active");
+        //open modal
+        $('#modalFiltros').modal({
+          backdrop: false,
+          show: true
+        });
+        // reset modal if it isn't visible
+        if (!($('.modal.in').length)) {
+          $('.modal-dialog').css({
+            top: 52,
+            left: 62
+          });
+        }
+
+        $('.modal-dialog').draggable({
+          cursor:"move",
+          handle: ".dragable_touch"
+        });
+      }
+
+      function abrirlModalCapas() {
+        $("#liFiltros").addClass("li_active");
+        //open modal
+        $('#modalCapas').modal({
+          backdrop: false,
+          show: true
+        });
+        // reset modal if it isn't visible
+        if (!($('.modal.in').length)) {
+          $('.modal-dialog').css({
+            top: 52,
+            left: 62
+          });
+        }
+
+        $('.modal-dialog').draggable({
+          cursor:"move",
+          handle: ".dragable_touch"
+        });
+      }
+
+      function abrirlModalInformacion() {
+        $("#liFiltros").addClass("li_active");
+        //open modal
+        $('#modalInformacion').modal({
+          backdrop: false,
+          show: true
+        });
+        // reset modal if it isn't visible
+        if (!($('.modal.in').length)) {
+          $('.modal-dialog').css({
+            top: 52,
+            left: 62
+          });
+        }
+
+        $('.modal-dialog').draggable({
+          cursor:"move",
+          handle: ".dragable_touch"
+        });
+      }
+
+      function abrirlModalMedicion() {
+        $("#liFiltros").addClass("li_active");
+        //open modal
+        $('#modalMedicion').modal({
+          backdrop: false,
+          show: true
+        });
+        // reset modal if it isn't visible
+        if (!($('.modal.in').length)) {
+          $('.modal-dialog').css({
+            top: 52,
+            left: 62
+          });
+        }
+
+        $('.modal-dialog').draggable({
+          cursor:"move",
+          handle: ".dragable_touch"
+        });
+      }
+
+      function abrirlModalElevacion() {
+        $("#liFiltros").addClass("li_active");
+        //open modal
+        $('#modalElevacion').modal({
+          backdrop: false,
+          show: true
+        });
+        // reset modal if it isn't visible
+        if (!($('.modal.in').length)) {
+          $('.modal-dialog').css({
+            top: 52,
+            left: 62
+          });
+        }
+
+        $('.modal-dialog').draggable({
+          cursor:"move",
+          handle: ".dragable_touch"
+        });
+      }
+
+      function abrirlModalSeleccionar() {
+        $("#liFiltros").addClass("li_active");
+        //open modal
+        $('#modalSeleccionar').modal({
+          backdrop: false,
+          show: true
+        });
+        // reset modal if it isn't visible
+        if (!($('.modal.in').length)) {
+          $('.modal-dialog').css({
+            top: 52,
+            left: 62
+          });
+        }
+
+        $('.modal-dialog').draggable({
+          cursor:"move",
+          handle: ".dragable_touch"
+        });
+      }
+      </script>
     </body>
 </html>
