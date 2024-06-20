@@ -1,49 +1,51 @@
-.loader-wrapper{
+.loader-wrapper {
   position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:1000999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000999;
   background-color: #ffffff;
 }
 
 .esriLayerList .esriContainer {
-    font-size: 11px !important;
+  font-size: 11px !important;
 
 }
-.PJuntos{
-    font-size: 11px;
-    padding: 10px 30px;
-    color: #fff
 
-}
-@media only screen and (max-width:500px){
-    #zoom_in{
-        display:none
-    }
+.PJuntos {
+  font-size: 11px;
+  padding: 10px 30px;
+  color: #fff
 }
 
-#header{
+@media only screen and (max-width:500px) {
+  #zoom_in {
+    display: none
+  }
+}
+
+#header {
   font-size: 16px;
   font-weight: bold;
 
 }
 
 #legends {
-        left: 1em;
-        bottom: 1em;
-        position: absolute;
-        height: 265px;
-        width: 210px;
-        background-color: #FFFFFF;
-        border-radius: 7px;
-        z-index: 999;
-        padding: 1em;
-        font-size: 0.85em;
+  left: 1em;
+  bottom: 1em;
+  position: absolute;
+  height: 265px;
+  width: 210px;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  z-index: 999;
+  padding: 1em;
+  font-size: 0.85em;
 
-    }
-.alert-info-data{  
+}
+
+.alert-info-data {
   background-color: #d9d328;
   color: black;
   font-weight: bold;
@@ -51,61 +53,73 @@
   text-align: justify;
   padding: 10px;
   border-radius: 4px;
- }
- .checkbox label, .radio label, label {
-    font-size: .8rem !important;
+}
+
+.checkbox label,
+.radio label,
+label {
+  font-size: .8rem !important;
 }
 
 
 .legend-scroll {
-        height: 180px; /* Altura específica */
-        overflow-y: auto; /* Agrega un scroll vertical si el contenido excede la altura */
-        border: 0px solid #ccc; /* Añade un borde para mayor claridad */
-        background-color: #a9a9a98c;
-        padding: 1px; /* Espacio interno para que el contenido no esté pegado a los bordes */
-    }
+  height: 180px;
+  /* Altura específica */
+  overflow-y: auto;
+  /* Agrega un scroll vertical si el contenido excede la altura */
+  border: 0px solid #ccc;
+  /* Añade un borde para mayor claridad */
+  background-color: #a9a9a98c;
+  padding: 1px;
+  /* Espacio interno para que el contenido no esté pegado a los bordes */
+}
 
 #reporte_info_poblacion {
-        right: 26em;
-        bottom: 1em;
-        position: absolute;
-        width: calc(100% - 58%);
-        background-color: #FFFFFF;
-        opacity: 0.97;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #888;
-        z-index: 9999;
-        padding: 0.5em;
-        font-size: 0.85em;
-        line-height: 1 !important;
+  right: 26em;
+  bottom: 1em;
+  position: absolute;
+  width: calc(100% - 58%);
+  background-color: #FFFFFF;
+  opacity: 0.97;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #888;
+  z-index: 9999;
+  padding: 0.5em;
+  font-size: 0.85em;
+  line-height: 1 !important;
 
-       }
+}
 
 .titulo-inei {
-    font-size: 14px;
-    font-weight: bold;
-    color: #00bcd4;
-    background-color: #ebebeb;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00bcd4;
+  background-color: #ebebeb;
 }
+
 .titulo-pgh {
-    font-size: 14px;
-    font-weight: bold;
-    color: #FFA500;
-    background-color: #ebebeb;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFA500;
+  background-color: #ebebeb;
 }
+
 .title-two-pgh {
-    background-color: #ff8a48;
-    font-size: 13px;
-    color: #fff;
+  background-color: #ff8a48;
+  font-size: 13px;
+  color: #fff;
 }
+
 .title-two-inei {
-    background-color: #00bcd4;
-    font-size: 13px;
-    color: #fff;
+  background-color: #00bcd4;
+  font-size: 13px;
+  color: #fff;
 }
+
 .custom-tooltip {
-    position: relative;
+  position: relative;
 }
+
 /* Estilos para el botón de descarga */
 .boton-descarga {
   display: inline-block;
@@ -117,240 +131,251 @@
   border-radius: 5px;
   font-size: 16px;
 }
-.titulo-report{
-   padding: 2px 20px;
-   font-size: 16px;
-   font-weight: bold !important;
-   text-align: justify;
+
+.titulo-report {
+  padding: 2px 20px;
+  font-size: 16px;
+  font-weight: bold !important;
+  text-align: justify;
 
 }
 
 #close_ventana_pgh {
-    position: absolute;
-    top: -8px;
-    right: -2px;
-    margin: 0px;
-    cursor: pointer;
-  }
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  margin: 0px;
+  cursor: pointer;
+}
 
 #close-leyenda-l {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 0px;
-    cursor: pointer;
-  }
-      
-      .tree-node {
-            margin: 2px;
-        }
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+  cursor: pointer;
+}
 
-        .parent-node {
-            background-color: #193f57;
-            color: #fff;
-            padding: 5px;
-            /*font-weight: bold;*/
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 5px;
-        }
+.tree-node {
+  margin: 2px;
+}
 
-        .child-node{
-            display: none;
-            margin-left: 2px;
-            background-color: #f0f0f0;
-            font-weight: bold;
-            color: #007bff;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .grandchild-node {
-            display: none;
-            margin-left: 2px;
-            background-color: #f0f0f0;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #000;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+.parent-node {
+  background-color: #193f57;
+  color: #fff;
+  padding: 5px;
+  /*font-weight: bold;*/
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
 
-        .expanded .child-node, .expanded .grandchild-node {
-            display: block;
-        }
-        .align-right {
-            text-align: left;
-        }
+.child-node {
+  display: none;
+  margin-left: 2px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #007bff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.grandchild-node {
+  display: none;
+  margin-left: 2px;
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.expanded .child-node,
+.expanded .grandchild-node {
+  display: block;
+}
+
+.align-right {
+  text-align: left;
+}
 
 /******************** fil estratos**********************/
-       /* Estilo para el contenedor del select múltiple */
-    .custom-select-fill {
-      position: relative;
-      width: 200px;
-      padding: 5px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #fff;
-      cursor: pointer;
-    }
+/* Estilo para el contenedor del select múltiple */
+.custom-select-fill {
+  position: relative;
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
 
-    .custom-select-fill select {
-      display: none; /* Oculta el elemento select nativo */
-    }
+.custom-select-fill select {
+  display: none;
+  /* Oculta el elemento select nativo */
+}
 
-    .checkbox-list {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      max-height: 120px; /* Ajusta según sea necesario */
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-      background-color: #f0f8ff;
-    }
+.checkbox-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 120px;
+  /* Ajusta según sea necesario */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #f0f8ff;
+}
 
-    .checkbox-list label {
-      display: block;
-      padding: 4px;
-      cursor: pointer;
-    }
+.checkbox-list label {
+  display: block;
+  padding: 4px;
+  cursor: pointer;
+}
 
-    .checkbox-list label:hover {
-      background-color: #f0f0f0;
-    }
+.checkbox-list label:hover {
+  background-color: #f0f0f0;
+}
 
-    /* Pseudo-clase para mostrar la lista al enfocar el contenedor */
-    .custom-select-fill:focus-within .checkbox-list,
-    .custom-select-fill.active .checkbox-list {
-      display: block;
-    }
+/* Pseudo-clase para mostrar la lista al enfocar el contenedor */
+.custom-select-fill:focus-within .checkbox-list,
+.custom-select-fill.active .checkbox-list {
+  display: block;
+}
 
-    /* Estilo para el contenedor de los elementos seleccionados */
-    .selected-options {
-      padding: 2px;
-      cursor: pointer;
-    }
+/* Estilo para el contenedor de los elementos seleccionados */
+.selected-options {
+  padding: 2px;
+  cursor: pointer;
+}
 
-    .sel-center {
-      margin: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.sel-center {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    /***********************fil pgh ****************/
+/***********************fil pgh ****************/
 
-     .custom-select-fill-pgh {
-      position: relative;
-      width: 200px;
-      padding: 5px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #fff;
-      cursor: pointer;
-    }
+.custom-select-fill-pgh {
+  position: relative;
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
 
-    .custom-select-fill-pgh select {
-      display: none; /* Oculta el elemento select nativo */
-    }
+.custom-select-fill-pgh select {
+  display: none;
+  /* Oculta el elemento select nativo */
+}
 
-    .checkbox-list-pgh {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      max-height: 120px; /* Ajusta según sea necesario */
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-      background-color: #f0f8ff;
-    }
+.checkbox-list-pgh {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 120px;
+  /* Ajusta según sea necesario */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #f0f8ff;
+}
 
-    .checkbox-list-pgh label {
-      display: block;
-      padding: 4px;
-      cursor: pointer;
-    }
+.checkbox-list-pgh label {
+  display: block;
+  padding: 4px;
+  cursor: pointer;
+}
 
-    .checkbox-list-pgh label:hover {
-      background-color: #f0f0f0;
-    }
+.checkbox-list-pgh label:hover {
+  background-color: #f0f0f0;
+}
 
-    /* Pseudo-clase para mostrar la lista al enfocar el contenedor */
-    .custom-select-fill-pgh:focus-within .checkbox-list-pgh,
-    .custom-select-fill-pgh.active .checkbox-list-pgh {
-      display: block;
-    }
+/* Pseudo-clase para mostrar la lista al enfocar el contenedor */
+.custom-select-fill-pgh:focus-within .checkbox-list-pgh,
+.custom-select-fill-pgh.active .checkbox-list-pgh {
+  display: block;
+}
 
-    /* Estilo para el contenedor de los elementos seleccionados */
-    .selected-options-pgh {
-      padding: 2px;
-      cursor: pointer;
-    }
+/* Estilo para el contenedor de los elementos seleccionados */
+.selected-options-pgh {
+  padding: 2px;
+  cursor: pointer;
+}
 
 /****************fill vecimiento******************************/
 
 .custom-select-fill-vcto {
-      position: relative;
-      width: 200px;
-      padding: 5px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #fff;
-      cursor: pointer;
-    }
+  position: relative;
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
 
-    .custom-select-fill-vcto select {
-      display: none; /* Oculta el elemento select nativo */
-    }
+.custom-select-fill-vcto select {
+  display: none;
+  /* Oculta el elemento select nativo */
+}
 
-    .checkbox-list-vcto {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      max-height: 120px; /* Ajusta según sea necesario */
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-      background-color: #f0f8ff;
-    }
+.checkbox-list-vcto {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 120px;
+  /* Ajusta según sea necesario */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #f0f8ff;
+}
 
-    .checkbox-list-vcto label {
-      display: block;
-      padding: 4px;
-      cursor: pointer;
-    }
+.checkbox-list-vcto label {
+  display: block;
+  padding: 4px;
+  cursor: pointer;
+}
 
-    .checkbox-list-vcto label:hover {
-      background-color: #f0f0f0;
-    }
+.checkbox-list-vcto label:hover {
+  background-color: #f0f0f0;
+}
 
-    /* Pseudo-clase para mostrar la lista al enfocar el contenedor */
-    .custom-select-fill-vcto:focus-within .checkbox-list-vcto,
-    .custom-select-fill-vcto.active .checkbox-list-vcto {
-      display: block;
-    }
+/* Pseudo-clase para mostrar la lista al enfocar el contenedor */
+.custom-select-fill-vcto:focus-within .checkbox-list-vcto,
+.custom-select-fill-vcto.active .checkbox-list-vcto {
+  display: block;
+}
 
-    /* Estilo para el contenedor de los elementos seleccionados */
-    .selected-options-vcto {
-      padding: 2px;
-      cursor: pointer;
-    }
+/* Estilo para el contenedor de los elementos seleccionados */
+.selected-options-vcto {
+  padding: 2px;
+  cursor: pointer;
+}
+
 /****************************************/
 
 /* Cambiar color al pasar el mouse sobre el botón */
@@ -360,87 +385,99 @@
 
 
 .dijitSliderProgressBar {
-    background-color: #0081ff !important;
+  background-color: #0081ff !important;
 }
+
 .dijitSliderBar {
-    border-style: hidden !important;
-    border-color: #0081ff !important;
+  border-style: hidden !important;
+  border-color: #0081ff !important;
 }
+
 .dijitSliderImageHandle {
-    border: 6px solid #0081ff !important;   
+  border: 6px solid #0081ff !important;
 }
+
 .dijitSliderLeftBumper {
-    background-color: #0081ff !important;
+  background-color: #0081ff !important;
 }
+
 .dijitSliderRemainingBar {
-    background-color: #b5bcc7 !important;
+  background-color: #b5bcc7 !important;
 }
 
 .custom-tooltip::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 10px;
-    top: 100%; /* Cambiamos 'bottom' a 'top' */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
+  content: attr(data-tooltip);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 10px;
+  top: 100%;
+  /* Cambiamos 'bottom' a 'top' */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .custom-tooltip:hover::after {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 
-.loader{
+.loader {
   display: block;
   position: relative;
-  left:50%;
-  top:50%;
-  width:200px;
-  height:200px;
-  margin:-100px 0 0 -100px;
-  border-top:3px solid #3498db;
-  border-radius:50%;
-  
-  -webkit-animation: spin 3.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 3.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+
+  -webkit-animation: spin 3.5s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 3.5s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
-.loader:before{
-  content:"";
-  position:absolute;
-  top:5px;
-  left:5px;
-  bottom:5px;
-  right:5px;
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
   border-top: 3px solid #e74c3c;
-  border-radius:50%;
-  
-  -webkit-animation: spin 2.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 2.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  border-radius: 50%;
+
+  -webkit-animation: spin 2.5s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2.5s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
-.loader:after{
-  content:"";
-  position:absolute;
-  top:15px;
-  left:15px;
-  bottom:15px;
-  right:15px;
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
   border-top: 3px solid #f9c922;
-  border-radius:50%;
-  
-  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  border-radius: 50%;
+
+  -webkit-animation: spin 1.5s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
 }
+
 .imges {
   display: flex;
   justify-content: center;
@@ -450,140 +487,179 @@
 }
 
 @-webkit-keyframes spin {
-  0%   {
-    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-      -ms-transform: rotate(0deg);  /* IE 9 */
-          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+
   100% {
-    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-      -ms-transform: rotate(360deg);  /* IE 9 */
-          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
   }
 }
+
 @keyframes spin {
-  0%   {
-    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-      -ms-transform: rotate(0deg);  /* IE 9 */
-          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+
   100% {
-    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-      -ms-transform: rotate(360deg);  /* IE 9 */
-          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
   }
 }
 
 .spinner-grow-login {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-     margin-left: 18px;
-     margin-right: 18px;
-    vertical-align: text-bottom;
-    background-color: currentColor;
-    border-radius: 50%;
-    /*box-shadow: 12px 13px 39px 0 rgb(35 128 240 / 18%);*/
-    box-shadow: 12px 13px 39px 12px rgb(233 237 241);
-   /* opacity: 0;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 18px;
+  margin-right: 18px;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  border-radius: 50%;
+  /*box-shadow: 12px 13px 39px 0 rgb(35 128 240 / 18%);*/
+  box-shadow: 12px 13px 39px 12px rgb(233 237 241);
+  /* opacity: 0;
     -webkit-animation: spinner-grow 1.75s linear infinite;
     animation: spinner-grow 1.75s linear infinite;*/
 }
+
 .text-success {
-    color: #28a745!important;
+  color: #28a745 !important;
 }
+
 .text-danger {
-    color: #dc3545!important;
+  color: #dc3545 !important;
 }
+
 .text-warning {
-    color: #ffc107!important;
+  color: #ffc107 !important;
 }
+
 .text-info {
-    color: #17a2b8!important;
+  color: #17a2b8 !important;
 }
+
 .text-primary {
-    color: #007bff!important;
+  color: #007bff !important;
 }
+
 .text-dark {
-    color: #343a40!important;
+  color: #343a40 !important;
 }
 
 .txt-alert {
-    font-size: 12px;
-    color: #007bff!important;
-}
-.active-btn{
-    background-color:#007bff!important;
+  font-size: 12px;
+  color: #007bff !important;
 }
 
-#MapaDiv_zoom_slider{
-  display:none !important;
-}
-.li-clas-list  {
-    background-color: #ebebeb;
-    border-radius: 5px;
-    padding: 10px 8px;
-    list-style-type: none;
-ba(0,0,0,.2);
+.active-btn {
+  background-color: #007bff !important;
 }
 
- /* Estilo para alinear elementos <input> a la derecha */
+#MapaDiv_zoom_slider {
+  display: none !important;
+}
+
+.li-clas-list {
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 10px 8px;
+  list-style-type: none;
+  ba(0, 0, 0, .2);
+}
+
+/* Estilo para alinear elementos <input> a la derecha */
 li.inp-position label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse; /* Invierte la dirección de los elementos */
+  flex-direction: row-reverse;
+  /* Invierte la dirección de los elementos */
   width: 100%;
 }
 
 /* Estilo para el texto a la izquierda */
 li.inp-position span {
-  margin-right: 10px; /* Ajusta el margen según tus necesidades */
+  margin-right: 10px;
+  /* Ajusta el margen según tus necesidades */
 }
 
 
 
 .contenedor-reporty {
-     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
 }
 
 .icono {
-  flex: 1; /* El icono ocupa 1/2 del espacio disponible */
+  flex: 1;
+  /* El icono ocupa 1/2 del espacio disponible */
   text-align: right;
-  margin-right: 10px; /* Agrega margen derecho de 10px, puedes ajustar el valor según sea necesario */
+  margin-right: 10px;
+  /* Agrega margen derecho de 10px, puedes ajustar el valor según sea necesario */
   max-width: 25%;
 }
 
 .dato-estadistico {
-  flex: 1; /* El dato estadístico ocupa 1/2 del espacio disponible */
+  flex: 1;
+  /* El dato estadístico ocupa 1/2 del espacio disponible */
   text-align: left;
-  margin-left: 10px; /* Agrega margen izquierdo de 10px, puedes ajustar el valor según sea necesario */
+  margin-left: 10px;
+  /* Agrega margen izquierdo de 10px, puedes ajustar el valor según sea necesario */
 }
+
 .titulo-df {
-    font-weight: bold;
-    color: #040e2e;
-    margin: 0;
+  font-weight: bold;
+  color: #040e2e;
+  margin: 0;
 }
+
 .dato-df {
   font-weight: bold;
-  font-size: 20px; /* Tamaño de fuente más grande */
-  margin: 0; /* Elimina el margen superior */
-  color: #040e2e; /* Color naranja */
+  font-size: 20px;
+  /* Tamaño de fuente más grande */
+  margin: 0;
+  /* Elimina el margen superior */
+  color: #040e2e;
+  /* Color naranja */
 }
+
 .heading-label {
-    font-weight: bold !important;
+  font-weight: bold !important;
 }
 
 .titulo {
-  font-weight: bold; /* Texto en negrita */
-  color: #FFA500; /* Color naranja */
-  margin: 0; /* Elimina el margen superior */
+  font-weight: bold;
+  /* Texto en negrita */
+  color: #FFA500;
+  /* Color naranja */
+  margin: 0;
+  /* Elimina el margen superior */
 }
-.titulo-one{
+
+.titulo-one {
   font-size: 15px;
   font-weight: bold;
   color: #00bcd4;
@@ -593,166 +669,192 @@ li.inp-position span {
 
 .dato {
   font-weight: bold;
-  font-size: 18px; /* Tamaño de fuente más grande */
-  margin: 0; /* Elimina el margen superior */
-  color: #FFA500; /* Color naranja */
+  font-size: 18px;
+  /* Tamaño de fuente más grande */
+  margin: 0;
+  /* Elimina el margen superior */
+  color: #FFA500;
+  /* Color naranja */
 }
 
 .button-container-herramientas {
-    text-align: center; /* Centra horizontalmente los elementos dentro del div */
-    margin-top: 2px; /* Añade margen superior si es necesario */
+  text-align: center;
+  /* Centra horizontalmente los elementos dentro del div */
+  margin-top: 2px;
+  /* Añade margen superior si es necesario */
 }
+
 .sidebar-body {
-    overflow-y: auto; /* Agregar una barra de desplazamiento vertical si es necesario */
-    max-height: 80%; /* Define una altura máxima para que la barra de desplazamiento aparezca cuando el contenido sea demasiado largo */
+  overflow-y: auto;
+  /* Agregar una barra de desplazamiento vertical si es necesario */
+  max-height: 80%;
+  /* Define una altura máxima para que la barra de desplazamiento aparezca cuando el contenido sea demasiado largo */
 
 }
 
 .title-two-stadistica {
-    background-color:#00bcd4;
-    font-size: 15px;
-    padding: 10px 8px;
-    color: #fff;
+  background-color: #00bcd4;
+  font-size: 15px;
+  padding: 10px 8px;
+  color: #fff;
 }
+
 .title-two-report {
-    background-color:#ff8a48;
-    font-size: 15px;
-    padding: 10px 8px;
-    color: #fff;
+  background-color: #ff8a48;
+  font-size: 15px;
+  padding: 10px 8px;
+  color: #fff;
 }
+
 .btn-secondary-sup-rep {
-    color: #fff;
-    background-color: #ff8a48;
-    border-color: #ff8a48;
-    box-shadow: none;
+  color: #fff;
+  background-color: #ff8a48;
+  border-color: #ff8a48;
+  box-shadow: none;
 }
-.esriControlsBR{
-  display:none !important;
+
+.esriControlsBR {
+  display: none !important;
 }
+
 .btn-dist {
-     margin-left: 18px !important;
-     margin-right: 2px !important;
+  margin-left: 18px !important;
+  margin-right: 2px !important;
 }
+
 #peru {
-    background-image: url(../static_base/img/ico-peru.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position-x: center;
-    background-position-y: center;
-  }
+  background-image: url(../static_base/img/ico-peru.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 #btn-mapas-base {
-    background-image: url(../static_base/img/icon_menu/basemap.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: center;
-    background-position-y: center;
-  }
+  background-image: url(../static_base/img/icon_menu/basemap.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 #btn-capas-base {
-    background-image: url(../static_base/img/icon_menu/layerList.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: center;
-    background-position-y: center;
-  }
+  background-image: url(../static_base/img/icon_menu/layerList.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: center;
+  background-position-y: center;
+}
 
 .buscador-txt {
-    border: none;
-    background: none;
-    color: #fff;
-    font-size: 13px;
-    padding: 0px 6px;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 13px;
+  padding: 0px 6px;
 }
 
 .buscador-lab {
-    display: table;
-    width: 100%;
-    background: rgba(10,75,121,0.58);
-    color: #fff;
-    margin: 1px 0px;
+  display: table;
+  width: 100%;
+  background: rgba(10, 75, 121, 0.58);
+  color: #fff;
+  margin: 1px 0px;
 }
 
 .esriPopup .titlePane {
-    background-color: #4768d2!important;
-   
+  background-color: #4768d2 !important;
+
 }
 
 .arcgisSearch .searchGroup .searchInput {
-   
-    color: #193f57 !important;
-    background-color: #fff;
-    border: 1px solid #193f57 !important;   
-   
+
+  color: #193f57 !important;
+  background-color: #fff;
+  border: 1px solid #193f57 !important;
+
 }
+
 .arcgisSearch .searchBtn {
 
-    border: 1px solid #193f57 !important;
-    background-color: #193f57 !important;
+  border: 1px solid #193f57 !important;
+  background-color: #193f57 !important;
 }
+
 .arcgisSearch .searchGroup {
-    position: relative;
-    color: #193f57 !important;
-    font-family: Arial, Helvetica, sans-serif;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+  position: relative;
+  color: #193f57 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .arcgisSearch .searchInputGroup {
-    box-shadow: 0 0 0 0 transparent, -1px 2px 4px 1px rgb(0 0 0 / 25%) !important;
-    border-radius: 4px 0 0 4px !important;
+  box-shadow: 0 0 0 0 transparent, -1px 2px 4px 1px rgb(0 0 0 / 25%) !important;
+  border-radius: 4px 0 0 4px !important;
 }
-.arcgisSearch .searchBtn {
-    box-shadow: 0 0 0 0 transparent, -1px 2px 4px 1px rgb(0 0 0 / 25%) !important;
-    /*border-radius: 0px 4px 4px 0px !important;*/
-}
-.esri-icon-search:before {
-    content: "\e67b";
-    color:#fff !important;
-}
-.esri-icon-down-arrow:before {
-    content: "\e608";
-    color: aliceblue;
-}
-.btn-secondary-lat {
-    color: #fff;
-    background-color: #193f57;
-    border-color: #193f57;
-    box-shadow: none;
-}
-.title-one {
-    background: #f0820f;
-    font-size: 15px;
-    padding: 10px 8px;
-    color: #fff;
-}
-.title-two {
-    background: #0079ba;
-    font-size: 15px;
-    padding: 10px 8px;
-    color: #fff;
-}
-.title-tree {
-    background: #09B66D;
-    font-size: 15px;
-    padding: 10px 8px;
-    color: #fff;
-}
-.title-for {
-    background: #0081FF;
-    font-size: 15px;
-    padding: 10px 8px;
-    color: #fff;
-}
-.btn-login {
-   
-    border-radius: 4px !important;
- 
-}
-.cunamas{
-    font-size: 11px;
-    padding: 10px 30px;
-    color: #fff
 
+.arcgisSearch .searchBtn {
+  box-shadow: 0 0 0 0 transparent, -1px 2px 4px 1px rgb(0 0 0 / 25%) !important;
+  /*border-radius: 0px 4px 4px 0px !important;*/
+}
+
+.esri-icon-search:before {
+  content: "\e67b";
+  color: #fff !important;
+}
+
+.esri-icon-down-arrow:before {
+  content: "\e608";
+  color: aliceblue;
+}
+
+.btn-secondary-lat {
+  color: #fff;
+  background-color: #193f57;
+  border-color: #193f57;
+  box-shadow: none;
+}
+
+.title-one {
+  background: #f0820f;
+  font-size: 15px;
+  padding: 10px 8px;
+  color: #fff;
+}
+
+.title-two {
+  background: #0079ba;
+  font-size: 15px;
+  padding: 10px 8px;
+  color: #fff;
+}
+
+.title-tree {
+  background: #09B66D;
+  font-size: 15px;
+  padding: 10px 8px;
+  color: #fff;
+}
+
+.title-for {
+  background: #0081FF;
+  font-size: 15px;
+  padding: 10px 8px;
+  color: #fff;
+}
+
+.btn-login {
+
+  border-radius: 4px !important;
+
+}
+
+.cunamas {
+  font-size: 11px;
+  padding: 10px 30px;
+  color: #fff
 }
 
 .alert {
@@ -761,9 +863,12 @@ li.inp-position span {
   color: white;
   opacity: 1;
   transition: opacity 0.6s;
-  margin-bottom: 15px;
 }
-.alert.warning {background-color: #ff9800;}
+
+.alert.warning {
+  background-color: #ff2600;
+}
+
 .closebtn {
   margin-left: 15px;
   color: white;
@@ -778,37 +883,39 @@ li.inp-position span {
 .closebtn:hover {
   color: black;
 }
-.btn-edit-options{
+
+.btn-edit-options {
   text-align: center;
   margin: 2px;
   padding-top: 6px;
 }
-.botones{
-  background:#e6e6e6; 
+
+.botones {
+  background: #e6e6e6;
   text-align: center;
   padding: 1px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.close-table-mzna{
-        cursor: pointer;
-  }      
+
+.close-table-mzna {
+  cursor: pointer;
+}
+
 #id_table_mznas {
-        right: 1em;
-        bottom: 1em;
-        position: absolute;
-        width: calc(100% - 58%);
-        background-color: #FFFFFF;
-        opacity: 0.97;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #888;
-        z-index: 11;
-        padding: 0.5em;
-        font-size: 0.85em;
-        line-height: 1 !important;
-
-       }
-
+  right: 1em;
+  bottom: 1em;
+  position: absolute;
+  width: calc(100% - 58%);
+  background-color: #FFFFFF;
+  opacity: 0.97;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #888;
+  z-index: 11;
+  padding: 0.5em;
+  font-size: 0.85em;
+  line-height: 1 !important;
+}
 
 .slidecontainer {
   width: 100%;
@@ -846,58 +953,68 @@ li.inp-position span {
 }
 
 .esriLegendLeft {
-    font-size: 12px !important;
+  font-size: 12px !important;
 }
 
 .styled-table-rigth-st {
-    border-collapse: collapse;
-    margin: 15px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
 .styled-table-rigth-st thead tr {
-    background-color: #193f57;
-    color: #ffffff;
-    text-align: left;
+  background-color: #193f57;
+  color: #ffffff;
+  text-align: left;
 }
+
 .styled-table-rigth-st th,
 .styled-table-rigth-st td {
-    padding: 3px 5px;
+  padding: 3px 5px;
 }
+
 .styled-table-rigth-st tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .styled-table-rigth-st tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .styled-table-rigth-st tbody tr:last-of-type {
-    border-bottom: 1px solid #193f57;
+  border-bottom: 1px solid #193f57;
 }
-.styled-table-rigth-st tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-.styled-table-rigth-st thead th {
-    color: #ffffff !important;
-  }
 
-  #datatable_estratos {
+.styled-table-rigth-st tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.styled-table-rigth-st thead th {
+  color: #ffffff !important;
+}
+
+#datatable_estratos {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#datatable_estratos td, #datatable_estratos th {
+#datatable_estratos td,
+#datatable_estratos th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#datatable_estratos tr:nth-child(even){background-color: #f2f2f2;}
+#datatable_estratos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#datatable_estratos tr:hover {background-color: #ddd;}
+#datatable_estratos tr:hover {
+  background-color: #ddd;
+}
 
 #datatable_estratos th {
   padding-top: 2px;
@@ -906,20 +1023,26 @@ li.inp-position span {
   background-color: #193f57;
   color: white;
 }
+
 #datatable_pgh_geo {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#datatable_pgh_geo td, #datatable_pgh_geo th {
+#datatable_pgh_geo td,
+#datatable_pgh_geo th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#datatable_pgh_geo tr:nth-child(even){background-color: #f2f2f2;}
+#datatable_pgh_geo tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#datatable_pgh_geo tr:hover {background-color: #ddd;}
+#datatable_pgh_geo tr:hover {
+  background-color: #ddd;
+}
 
 #datatable_pgh_geo th {
   padding-top: 2px;
@@ -928,72 +1051,97 @@ li.inp-position span {
   background-color: #193f57;
   color: white;
 }
+
 .circle1 {
   width: 10px;
   height: 10px;
   background-color: red;
-  border-radius: 50%; /* Establece el radio para crear la forma circular */
+  border-radius: 50%;
+  /* Establece el radio para crear la forma circular */
 }
+
 .circle2 {
   width: 10px;
   height: 10px;
   background-color: yellow;
-  border-radius: 50%; /* Establece el radio para crear la forma circular */
+  border-radius: 50%;
+  /* Establece el radio para crear la forma circular */
 }
+
 .circle3 {
   width: 10px;
   height: 10px;
   background-color: green;
-  border-radius: 50%; /* Establece el radio para crear la forma circular */
+  border-radius: 50%;
+  /* Establece el radio para crear la forma circular */
 }
 
 .cuadrado1 {
-  width: 20px;           /* Ancho de 150 píxeles */
-  height: 20px;          /* Alto de 150 píxeles */
-  background: #E60000;        /* Fondo de color rojo */
+  width: 20px;
+  /* Ancho de 150 píxeles */
+  height: 20px;
+  /* Alto de 150 píxeles */
+  background: #E60000;
+  /* Fondo de color rojo */
   /*border: 1px solid #000;  Borde color negro y de 1 píxel de grosor */
 }
+
 .cuadrado2 {
-  width: 20px;           /* Ancho de 150 píxeles */
-  height: 20px;          /* Alto de 150 píxeles */
-  background: #734C00;        /* Fondo de color rojo */
+  width: 20px;
+  /* Ancho de 150 píxeles */
+  height: 20px;
+  /* Alto de 150 píxeles */
+  background: #734C00;
+  /* Fondo de color rojo */
   /*border: 1px solid #000;  Borde color negro y de 1 píxel de grosor */
 }
+
 .cuadrado3 {
-  width: 20px;           /* Ancho de 150 píxeles */
-  height: 20px;          /* Alto de 150 píxeles */
-  background: #FFAA00;        /* Fondo de color rojo */
+  width: 20px;
+  /* Ancho de 150 píxeles */
+  height: 20px;
+  /* Alto de 150 píxeles */
+  background: #FFAA00;
+  /* Fondo de color rojo */
   /*border: 1px solid #000;  Borde color negro y de 1 píxel de grosor */
 }
+
 .cuadrado4 {
-  width: 20px;           /* Ancho de 150 píxeles */
-  height: 20px;          /* Alto de 150 píxeles */
-  background: #E6E600;        /* Fondo de color rojo */
+  width: 20px;
+  /* Ancho de 150 píxeles */
+  height: 20px;
+  /* Alto de 150 píxeles */
+  background: #E6E600;
+  /* Fondo de color rojo */
   /*border: 1px solid #000;  Borde color negro y de 1 píxel de grosor */
 }
+
 .cuadrado5 {
-  width: 20px;           /* Ancho de 150 píxeles */
-  height: 20px;          /* Alto de 150 píxeles */
-  background: #C500FF;        /* Fondo de color rojo */
+  width: 20px;
+  /* Ancho de 150 píxeles */
+  height: 20px;
+  /* Alto de 150 píxeles */
+  background: #C500FF;
+  /* Fondo de color rojo */
   /*border: 1px solid #000;  Borde color negro y de 1 píxel de grosor */
 }
 
 #suggestions {
-    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
-    height: auto;
-    position: absolute;
-    top: 45px;
-    z-index: 9999;
-    width: 300px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
+  height: auto;
+  position: absolute;
+  top: 45px;
+  z-index: 9999;
+  width: 300px;
 }
 
 #suggestions .suggest-element {
-    background-color: #EEEEEE;
-    border-top: 1px solid #d6d4d4;
-    cursor: pointer;
-    padding: 8px;
-    width: 100%;
-    float: left;
+  background-color: #EEEEEE;
+  border-top: 1px solid #d6d4d4;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  float: left;
 }
 
 #key_search {
@@ -1001,108 +1149,120 @@ li.inp-position span {
   outline: none;
   width: 370px;
   height: 41px;
-  display: table-cell; 
+  display: table-cell;
   vertical-align: middle;
   border: 1px solid #ccc;
   background-color: #ffffff;
-  border-radius:5px;
-  padding: 1rem;;
+  border-radius: 5px;
+  padding: 1rem;
+  ;
 }
 
 .btn-flat {
-    color: #fff;
-    background-color: #193f57;
-    border-color: #193f57;
-    box-shadow: none;
+  color: #fff;
+  background-color: #193f57;
+  border-color: #193f57;
+  box-shadow: none;
 }
+
 .btn-flat:hover {
   color: #f0820f;
 }
-.sidebar-box select{
-display:block;
-padding: 5px 10px;
-height:42px;
-margin:10px auto;
-min-width: 225px;
--webkit-appearance: none;
-height: 34px;
- background-color: #ffffff; 
-background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+
+.sidebar-box select {
+  display: block;
+  padding: 5px 10px;
+  height: 42px;
+  margin: 10px auto;
+  min-width: 225px;
+  -webkit-appearance: none;
+  height: 34px;
+  background-color: #ffffff;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
   background-repeat: no-repeat, repeat;
   background-position: right .7em top 50%, 0 0;
-  background-size: .65em auto, 100%;}
+  background-size: .65em auto, 100%;
+}
 
 #bottomPanel {
-        left: 49%;
-        margin: 0 auto;
-        margin-left: -500px;
-        position: absolute;
-        bottom: 2.5em;
-      }
+  left: 49%;
+  margin: 0 auto;
+  margin-left: -500px;
+  position: absolute;
+  bottom: 2.5em;
+}
 
- #PanelReportepgh {
-        right: 28em;
-        bottom: 1em;
-        position: absolute;
-        width: calc(100% - 75%);
-        background-color: #FFFFFF;
-        opacity: 0.97;
-        border-radius: 5px;
-        box-shadow: 0 0 5px #888;
-        z-index: 9999;
-        padding: 0.5em;
-        font-size: 0.85em;
-        line-height: 1 !important;
+#PanelReportepgh {
+  right: 28em;
+  bottom: 1em;
+  position: absolute;
+  width: calc(100% - 75%);
+  background-color: #FFFFFF;
+  opacity: 0.97;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #888;
+  z-index: 9999;
+  padding: 0.5em;
+  font-size: 0.85em;
+  line-height: 1 !important;
 
-       }
+}
 
-#timeInfo{
-        border-radius: 4px;
-        border: solid 2px #ccc;
-        background-color: #fff;
-        display: block;
-        padding: 5px;
-        position: relative;
-        text-align: center;
-        width: 1000px;
-        z-index: 99;
-      }
+#timeInfo {
+  border-radius: 4px;
+  border: solid 2px #ccc;
+  background-color: #fff;
+  display: block;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 1000px;
+  z-index: 99;
+}
 
-  .align-items-center-btn-eliminar {
-    text-align: left !important;
-    }
-  
-  .close-table-si{
-        cursor: pointer;
-  }
-  .close-table-via{
-        cursor: pointer;
-  }
-  .close-table-sector{
-        cursor: pointer;
-  }
-  .close-table-p65{
-        cursor: pointer;
-  }
-  .close-table-nu{
-        cursor: pointer;
-  }
-  .close-table-ag{
-    cursor: pointer;
-  }
-  .close-table-ag{
-    cursor: pointer;
-  }
-  .close-table-pgh{
-    cursor: pointer;
-  }
-  .close-leyenda{
-    cursor: pointer;
-  }
-  .left-icon-dias {
-        float: right;
-        margin-right: 10px; /* Espacio entre el icono y el texto */
-    }
+.align-items-center-btn-eliminar {
+  text-align: left !important;
+}
 
- 
+.close-table-si {
+  cursor: pointer;
+}
+
+.close-table-via {
+  cursor: pointer;
+}
+
+.close-table-sector {
+  cursor: pointer;
+}
+
+.close-table-p65 {
+  cursor: pointer;
+}
+
+.close-table-nu {
+  cursor: pointer;
+}
+
+.close-table-ag {
+  cursor: pointer;
+}
+
+.close-table-ag {
+  cursor: pointer;
+}
+
+.close-table-pgh {
+  cursor: pointer;
+}
+
+.close-leyenda {
+  cursor: pointer;
+}
+
+.left-icon-dias {
+  float: right;
+  margin-right: 10px;
+  /* Espacio entre el icono y el texto */
+}

@@ -159,6 +159,10 @@
 
 
 /*nuevas clases*/
+
+.puntero{
+ cursor: pointer;
+}
 .search-icon{
     right: 22px;
     top: 22px;
@@ -183,7 +187,7 @@
     border:1px dashed #ccc;
   }
   .li_active{
-    color:#e3e3e3;
+    color:#0081FF;
   }
   
   /*
@@ -206,8 +210,7 @@
     resize: both;
     max-width:300px;
   }
-  
-  
+    
   .dragable_modal .modal-body{
     height:relative;
     overflow-x: hidden;
@@ -221,7 +224,7 @@
   }
   .dragable_modal .modal-header h5{
     color: var(--white);
-    font-size: 18px;
+    font-size: 16px;
   }
   .dragable_modal .close_btn{
       top: -2px;
@@ -5145,6 +5148,7 @@ a.close.disabled{
     }
 }
 .modal.show .modal-dialog{
+    border-radius: 5px;
     transform:none
 }
 .modal.modal-static .modal-dialog{
@@ -5219,7 +5223,7 @@ a.close.disabled{
     border-top-right-radius:calc(.3rem - 1px)
 }
 .modal-header .close{
-    padding:1rem;
+    padding-bottom:1rem;
     margin:-1rem -1rem -1rem auto
 }
 .modal-title{
@@ -13014,7 +13018,7 @@ small{
     color:#09B66D!important
 }
 .bg-slate,.slate{
-    background-color:#242939!important
+    background-color:#034da0!important
 }
 .text-slate{
     color:#242939!important
@@ -14264,7 +14268,7 @@ small{
     color:#fff
 }
 .alert.alert-warning{
-    background-color:#FF8A48;
+    background-color:#bb7b7b;
     color:#fff
 }
 .alert.alert-danger{
@@ -18780,7 +18784,7 @@ span.select2-selection{
     background:#fff
 }
 .narrow-sidebar,.sidebar-theme-slate .sidebar-panel{
-    background-color:#ffffff
+    background-color:#d8d8d8
 }
 .ul-search-full-width .ul-search-result-area #result_list li a{
     padding-left:1.5rem;
@@ -19050,7 +19054,7 @@ span.select2-selection{
     color:#fff
 }
 .sidebar-panel .side-nav .main-menu ul{
-    padding:0
+    padding-top:15px;
 }
 .sidebar-panel .side-nav .main-menu ul li{
     list-style:none
