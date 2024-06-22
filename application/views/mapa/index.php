@@ -1339,15 +1339,8 @@
         </div>
         <div class="modal-body p-3">
           <div class="pt-lg pb-md">
-            <div class="ul-sidebar-panel-top pb-lg px-lg">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="heading-label p-0">Mapas Base</div>
-                <i class="fas fa-times-circle icon icon-sm hover-gray ul-sidebar-panel-close"></i>
-              </div>
-            </div>
             <div class="sidebar-body">
-
-              <div data-dojo-type="dijit/layout/ContentPane" class="scroll-mapas">
+              <div data-dojo-type="dijit/layout/ContentPane">
                 <div id="basemapGallery"></div>
               </div>
 
@@ -1657,13 +1650,14 @@
       if (!($('.modal.in').length)) {
         $('.modal-dialog').css({
           top: 52,
-          left: screen.width - 300
+          left: screen.width - 240
         });
       }
 
       $('.modal-dialog').draggable({
         cursor: "move",
-        handle: ".dragable_touch"
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
       });
     }
 
@@ -1683,7 +1677,8 @@
 
       $('.modal-dialog').draggable({
         cursor: "move",
-        handle: ".dragable_touch"
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
       });
     }
 
@@ -1703,7 +1698,8 @@
 
       $('.modal-dialog').draggable({
         cursor: "move",
-        handle: ".dragable_touch"
+        handle: ".dragable_touch",
+         containment: "#MapaDiv"
       });
     }
 
@@ -1897,10 +1893,6 @@
         handle: ".dragable_touch",
         containment: "#MapaDiv"
       });
-    }
-
-    function AbrirMapasBase() {
-      $("#iMapa").addClass("li_active");
     }
   </script>
 
