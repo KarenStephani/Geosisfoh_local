@@ -402,7 +402,7 @@
               <button class="btn btn-opacity-default rounded-circle btn-icon" type="button" data-toggle="dropdown">
                 <img class="avatar-xs rounded-circle" src="<?= base_url() ?>media/new_front/img/avatar.png" alt="" />
               </button>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu" style="margin-left:-110px">
                 <div class="text-center">
                   <img src="<?= base_url() ?>media/new_front/img/avatar.png" height="40px"> <br> <br>
                   <h4><?= ucfirst($user['nombreUsuario']) ?></h4>
@@ -773,15 +773,25 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-8 dragable_touch d-block">
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <!--<div class="row">
+            <div class="col-md-10 dragable_touch d-block">
               <h5 class="modal-title"><i class="fi fi-ts-search-location"></i> Filtros</h5>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2"  style="float: right;">
               <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>-->
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+              <i class="fi fi-ts-search-location"></i></span>&nbsp;
+            <span class="toolbar-item-text">Filtros</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -854,7 +864,7 @@
   <div class="modal fade dragable_modal" id="modalCapas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-8 dragable_touch d-block">
               <h5 class="modal-title"><i class="fi fi-sr-land-layers"></i> Capas</h5>
@@ -863,6 +873,18 @@
               <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+              <i class="fi fi-sr-land-layers"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Capas</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -934,7 +956,7 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-8 dragable_touch d-block">
               <h5 class="modal-title"><i class="fi fi-rr-info"></i> Información</h5>
@@ -943,6 +965,18 @@
               <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+              <i class="fi fi-rr-info"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Información</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -965,7 +999,7 @@
   <div class="modal fade dragable_modal" id="modalMedicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-10 dragable_touch d-block">
               <h5 class="modal-title"><i class="fi fi-tr-ruler-triangle"></i> Medición</h5>
@@ -975,8 +1009,19 @@
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
           </div>
-        </div>
+        </div> -->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+              <i class="fi fi-tr-ruler-triangle"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Medición</span>
+          </div>
 
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
         <div class="modal-body p-3">
           <div class="form">
             <label class="formulario">Herramienta</label>
@@ -1001,7 +1046,7 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-10 dragable_touch d-block">
               <h5 class="modal-title"><i class="fi fi-rs-mountain"></i> Elevación</h5>
@@ -1012,7 +1057,19 @@
             </div>
           </div>
         </div>
+            -->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+              <i class="fi fi-rs-mountain"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Elevación</span>
+          </div>
 
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
         <div class="modal-body p-3">
           <p>Contenido para elevación</p>
           <p>Contenido para elevación</p>
@@ -1035,7 +1092,7 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-10 dragable_touch d-block">
               <h5 class="modal-title"><i class="fi fi-tr-vector-polygon"></i> Selección</h5>
@@ -1044,6 +1101,18 @@
               <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+            <i class="fi fi-tr-vector-polygon"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Selección</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -1075,7 +1144,7 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-9 dragable_touch d-block">
               <h5 class="m-0 d-inline"> <i class="fi fi-rs-download"></i> Descargar</h5>
@@ -1084,6 +1153,18 @@
               <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+            <i class="fi fi-rs-download"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Descargar</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -1170,7 +1251,7 @@
   <div class="modal fade dragable_modal" id="modalImprimir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-9 dragable_touch d-block">
               <h5 class="m-0 d-inline"><i class="fi fi-rr-print"></i> Imprimir</h5>
@@ -1179,6 +1260,18 @@
               <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+            <i class="fi fi-rr-print"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Imprimir</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -1266,9 +1359,8 @@
     aria-labelledby="myModalLabel2">
     <div id="documentoBarridos" class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="float-right">
-
           </div>
           <div class="row m-0 w-100">
             <div class="col-md-12">
@@ -1279,6 +1371,18 @@
               <h5 class="modal-title">Seguimiento de Barrido</h5>
             </div>
 
+          </div>
+        </div> -->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+            <i class="fi fi-rs-map-marker"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Seguimiento de Barrido</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -1302,7 +1406,7 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+        <!--<div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-10 dragable_touch d-block">
               <h5 class="modal-title">Informe Estadístico</h5>
@@ -1311,6 +1415,17 @@
               <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
+          </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text"><i class="fi fi-rs-chart-pie-alt"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Informe Estadístico</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
 
@@ -1326,7 +1441,7 @@
   <div class="modal fade dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header w-100">
+       <!-- <div class="modal-header w-100">
           <div class="row m-0 w-100">
             <div class="col-md-10 dragable_touch d-block">
               <h5 class="modal-title">Galeria de mapas</h5>
@@ -1336,7 +1451,19 @@
                 aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
             </div>
           </div>
+        </div>-->
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+          <span class="toolbar-item-text"><i class="fi fi-rr-world"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Galería de mapas</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+          </div>
         </div>
+
         <div class="modal-body p-3">
           <div class="pt-lg pb-md">
             <div class="sidebar-body">
@@ -1461,7 +1588,7 @@
     reiniciarTemporizador();
   </script>
   <script type="text/javascript">
-    $(document).on('click', '#peru', function (e) {
+    $(document).on('click', '#btn-indentity', function (e) {
       $(".active-btn").not($(this).addClass('active-btn')).removeClass('active-btn');
     });
     $(document).on('click', '#zoom_in', function (e) {
@@ -1469,6 +1596,13 @@
     });
     $(document).on('click', '#zoom_out', function (e) {
       //  $(".active-btn").not($(this).addClass('active-btn')).removeClass('active-btn');                     
+    });
+
+    $(document).on('click', '#plus', function (e) {
+      $(".active-btn").not($(this).addClass('active-btn')).removeClass('active-btn');
+    });
+    $(document).on('click', '#minus', function (e) {
+      $(".active-btn").not($(this).addClass('active-btn')).removeClass('active-btn');
     });
     $(document).on('click', '#btn-mapas-base', function (e) {
       if ($("#btn-capas-base").hasClass("active-btn")) {
@@ -1649,7 +1783,7 @@
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
         $('.modal-dialog').css({
-          top: 52,
+          top: 55,
           left: screen.width - 240
         });
       }
@@ -1670,8 +1804,8 @@
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
         $('.modal-dialog').css({
-          top: 52,
-          left: screen.width - 300
+          top: 65,
+          left: screen.width - 240
         });
       }
 
@@ -1691,15 +1825,15 @@
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
         $('.modal-dialog').css({
-          top: 52,
-          left: screen.width - 300
+          top: 65,
+          left: screen.width - 240
         });
       }
 
       $('.modal-dialog').draggable({
         cursor: "move",
         handle: ".dragable_touch",
-         containment: "#MapaDiv"
+        containment: "#MapaDiv"
       });
     }
 
