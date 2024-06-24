@@ -852,7 +852,7 @@
 
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group p-2">
             <button type="button" class="btn btn-primary">Buscar</button>
           </div>
         </div>
@@ -1783,7 +1783,7 @@
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
         $('.modal-dialog').css({
-          top: 55,
+          top: 65,
           left: screen.width - 240
         });
       }

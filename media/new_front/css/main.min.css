@@ -198,8 +198,8 @@
   .dragable_modal .modal-dialog {
     position: fixed;
     max-width: 100%;
-    box-shadow: 0 0 5px rgba(0,0,0,.5);
-    background: var(--white);
+   /* box-shadow: 0 0 5px rgba(0,0,0,.5);
+    background: var(--white);*/
     margin: 0;
   }
   
@@ -5283,7 +5283,7 @@ a.close.disabled{
     }
 }
 .modal.show .modal-dialog{
-    border-radius: 5px;
+  /*  border-radius: 5px;*/
     transform:none
 }
 .modal.modal-static .modal-dialog{
