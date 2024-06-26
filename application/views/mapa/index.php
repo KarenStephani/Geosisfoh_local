@@ -374,8 +374,8 @@
         <div class="ul-header-topbar text-white">
           <div class="flex-grow-1">
 
-            <a data-toggle="tooltip" class="puntero" style="color:#F9FCA8" abrirlModalCapas title="Condiciones de Uso" role=”button”
-              onclick="abrirModalCondiciones()"> <i class="fi fi-rs-octagon-exclamation fa-2x"></i></a>
+            <a data-toggle="tooltip" class="puntero" style="color:#F9FCA8" abrirlModalCapas title="Condiciones de Uso"
+              role=”button” onclick="abrirModalCondiciones()"> <i class="fi fi-rs-octagon-exclamation fa-2x"></i></a>
             &nbsp;&nbsp;
 
             <a data-toggle="tooltip" class="puntero" abrirlModalCapas title="Reporte Seguimiento de Barridos"
@@ -775,21 +775,7 @@
   <!-- dragable modal Leyenda -->
 
 
-  <div class="accordion" id="modalLeyenda">
-    <button type="button" class="btn btn-secondary btn-block row m-1 modal-dialog" role="document"
-      data-toggle="collapse" data-target="#collapsible-leyenda" data-parent="#myAccordionLeyenda">Leyenda</button>
-    <div id="collapsible-leyenda" class="collapse  row m-1">
-      <div class="btn-group-m" role="group" aria-label="First group">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <div id="ModalCondiciones" class="modal" tabindex="-1">
     <div class="modal-dialog-n" style="">
@@ -812,48 +798,12 @@
     </div>
   </div>
 
-  <!--  <div class="modal fade dragable_modal" id="modalLeyenda" tabindex="-1" role="dialog" style="postion:absolute;"
-    aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
-          <div class="btn-group-m" role="group" aria-label="First group">
-            <span class="toolbar-item-text">
-            &nbsp;<i class="fi fi-rs-book-alt"></i></span>&nbsp;
-            <span class="toolbar-item-text">Leyenda</span>
-          </div>
 
-          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-
-        <div class="modal-body p-3">
-          <p>texto de prueba</p>
-          <p>texto de prueba</p>
-          <p>texto de prueba</p>
-          <p>texto de prueba</p>
-          <p>texto de prueba</p>
-        </div>
-      </div>
-    </div>
-  </div>-->
-  <!-- dragable modal filtros -->
   <div class="modal fade dragable_modal" id="modalFiltros" tabindex="-1" role="dialog" style="postion:absolute;"
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
-          <!--<div class="row">
-            <div class="col-md-10 dragable_touch d-block">
-              <h5 class="modal-title"><i class="fi fi-ts-search-location"></i> Filtros</h5>
-            </div>
-            <div class="col-md-2"  style="float: right;">
-              <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>-->
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
               <i class="fi fi-ts-search-location"></i></span>&nbsp;
@@ -1231,15 +1181,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <div class="row w-100">
-          <div class="col-6 text-right">
-            <button type="button" class="btn btn-primary">Buscar</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
   </div>
   <!-- dragable modal imprimir -->
   <div class="modal fade dragable_modal" id="modalImprimir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
@@ -1763,12 +1705,12 @@
         show: true
       });
       // reset modal if it isn't visible
-      if (!($('.modal.in').length)) {
+     /* if (!($('.modal.in').length)) {
         $('.modal-dialog').css({
-          bottom: 200,
+          top: 200,
           left: 80
         });
-      }
+      }*/
 
       $('.modal-dialog').draggable({
         cursor: "move",
