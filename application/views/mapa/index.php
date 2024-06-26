@@ -50,11 +50,11 @@
                 </div>
 -->
       <div class="new-menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+        <!--<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
           viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-        </svg>
+        </svg>-->
       </div>
       <!-- nuevo menu -->
       <div class="side-nav">
@@ -373,6 +373,11 @@
         </div>
         <div class="ul-header-topbar text-white">
           <div class="flex-grow-1">
+
+            <a data-toggle="tooltip" class="puntero" style="color:#F9FCA8" abrirlModalCapas title="Condiciones de Uso" role=”button”
+              onclick="abrirModalCondiciones()"> <i class="fi fi-rs-octagon-exclamation fa-2x"></i></a>
+            &nbsp;&nbsp;
+
             <a data-toggle="tooltip" class="puntero" abrirlModalCapas title="Reporte Seguimiento de Barridos"
               role=”button” onclick="abrirModalSeguimientoBarrido()"> <i class="fi fi-rs-map-marker fa-2x"></i></a>
 
@@ -767,7 +772,73 @@
     </div>
 
   </div>
+  <!-- dragable modal Leyenda -->
 
+
+  <div class="accordion" id="modalLeyenda">
+    <button type="button" class="btn btn-secondary btn-block row m-1 modal-dialog" role="document"
+      data-toggle="collapse" data-target="#collapsible-leyenda" data-parent="#myAccordionLeyenda">Leyenda</button>
+    <div id="collapsible-leyenda" class="collapse  row m-1">
+      <div class="btn-group-m" role="group" aria-label="First group">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ModalCondiciones" class="modal" tabindex="-1">
+    <div class="modal-dialog-n" style="">
+      <div class="modal-content">
+        <div class="modal-header">
+
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-title text-center"><i class="fi fi-rs-octagon-exclamation"></i> Condiciones de Uso </h2>
+          <p class="text-justify">
+            La información disponible en esta Plataforma, no poseen el carácter oficial de conformidad con la quinta
+            Disposición Transitoria y Final de la ley N°27795, Ley de Demarcación y Organización Territorial que
+            establece que las delimitaciones censales son de carácter referencial en tanto se determina el saneamiento
+            de los límites territoriales conforme a la referida ley.</p>
+        </div>
+        <div class="modal-footer align-items-center">
+          <button type="button" class="btn btn-primary" onclick="cerrarModalCondiciones()">Acepto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  <div class="modal fade dragable_modal" id="modalLeyenda" tabindex="-1" role="dialog" style="postion:absolute;"
+    aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text">
+            &nbsp;<i class="fi fi-rs-book-alt"></i></span>&nbsp;
+            <span class="toolbar-item-text">Leyenda</span>
+          </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
+
+        <div class="modal-body p-3">
+          <p>texto de prueba</p>
+          <p>texto de prueba</p>
+          <p>texto de prueba</p>
+          <p>texto de prueba</p>
+          <p>texto de prueba</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
   <!-- dragable modal filtros -->
   <div class="modal fade dragable_modal" id="modalFiltros" tabindex="-1" role="dialog" style="postion:absolute;"
     aria-labelledby="myModalLabel2">
@@ -864,21 +935,10 @@
   <div class="modal fade dragable_modal" id="modalCapas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-8 dragable_touch d-block">
-              <h5 class="modal-title"><i class="fi fi-sr-land-layers"></i> Capas</h5>
-            </div>
-            <div class="col-md-4">
-              <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-              <i class="fi fi-sr-land-layers"></i></span>&nbsp;
+              &nbsp; <i class="fi fi-sr-land-layers"></i></span>&nbsp;
             <span class="toolbar-item-text"> Capas</span>
           </div>
 
@@ -956,21 +1016,10 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-8 dragable_touch d-block">
-              <h5 class="modal-title"><i class="fi fi-rr-info"></i> Información</h5>
-            </div>
-            <div class="col-md-4">
-              <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-              <i class="fi fi-rr-info"></i></span>&nbsp;
+              &nbsp;<i class="fi fi-rr-info"></i></span>&nbsp;
             <span class="toolbar-item-text"> Información</span>
           </div>
 
@@ -999,21 +1048,10 @@
   <div class="modal fade dragable_modal" id="modalMedicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-10 dragable_touch d-block">
-              <h5 class="modal-title"><i class="fi fi-tr-ruler-triangle"></i> Medición</h5>
-            </div>
-            <div class="col-md-2">
-              <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div> -->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-              <i class="fi fi-tr-ruler-triangle"></i></span>&nbsp;
+              &nbsp; <i class="fi fi-tr-ruler-triangle"></i></span>&nbsp;
             <span class="toolbar-item-text"> Medición</span>
           </div>
 
@@ -1046,22 +1084,10 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-10 dragable_touch d-block">
-              <h5 class="modal-title"><i class="fi fi-rs-mountain"></i> Elevación</h5>
-            </div>
-            <div class="col-md-2">
-              <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>
-            -->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-              <i class="fi fi-rs-mountain"></i></span>&nbsp;
+              &nbsp; <i class="fi fi-rs-mountain"></i></span>&nbsp;
             <span class="toolbar-item-text"> Elevación</span>
           </div>
 
@@ -1092,21 +1118,10 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-10 dragable_touch d-block">
-              <h5 class="modal-title"><i class="fi fi-tr-vector-polygon"></i> Selección</h5>
-            </div>
-            <div class="col-md-2">
-              <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-            <i class="fi fi-tr-vector-polygon"></i></span>&nbsp;
+              &nbsp; <i class="fi fi-tr-vector-polygon"></i></span>&nbsp;
             <span class="toolbar-item-text"> Selección</span>
           </div>
 
@@ -1144,21 +1159,10 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-9 dragable_touch d-block">
-              <h5 class="m-0 d-inline"> <i class="fi fi-rs-download"></i> Descargar</h5>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-            <i class="fi fi-rs-download"></i></span>&nbsp;
+              &nbsp;<i class="fi fi-rs-download"></i></span>&nbsp;
             <span class="toolbar-item-text"> Descargar</span>
           </div>
 
@@ -1225,16 +1229,6 @@
 
             </select>
           </div>
-          <!-- <div class="form-group">
-                        <label class="formulario">Departamento</label>
-                        <select class="form-control"><option>LIMA</option></select>
-                        <label class="formulario">Provincia</label>
-                        <select class="form-control"><option>LIMA</option></select>
-                        <label class="formularioy">Distrito</label>
-                        <select class="form-control"><option>LIMA</option></select>
-                        <label class="formulario">Centros Poblados</label>
-                        <select class="form-control"><option>Seleccionar</option></select>
-                </div>-->
         </div>
       </div>
       <div class="modal-footer">
@@ -1251,21 +1245,10 @@
   <div class="modal fade dragable_modal" id="modalImprimir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-9 dragable_touch d-block">
-              <h5 class="m-0 d-inline"><i class="fi fi-rr-print"></i> Imprimir</h5>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-            <i class="fi fi-rr-print"></i></span>&nbsp;
+              &nbsp;<i class="fi fi-rr-print"></i></span>&nbsp;
             <span class="toolbar-item-text"> Imprimir</span>
           </div>
 
@@ -1332,16 +1315,6 @@
 
             </select>
           </div>
-          <!-- <div class="form-group">
-                        <label class="formulario">Departamento</label>
-                        <select class="form-control"><option>LIMA</option></select>
-                        <label class="formulario">Provincia</label>
-                        <select class="form-control"><option>LIMA</option></select>
-                        <label class="formularioy">Distrito</label>
-                        <select class="form-control"><option>LIMA</option></select>
-                        <label class="formulario">Centros Poblados</label>
-                        <select class="form-control"><option>Seleccionar</option></select>
-                </div>-->
         </div>
       </div>
       <div class="modal-footer">
@@ -1359,24 +1332,10 @@
     aria-labelledby="myModalLabel2">
     <div id="documentoBarridos" class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="float-right">
-          </div>
-          <div class="row m-0 w-100">
-            <div class="col-md-12">
-              <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="col-md-12 dragable_touch d-block">
-              <h5 class="modal-title">Seguimiento de Barrido</h5>
-            </div>
-
-          </div>
-        </div> -->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
             <span class="toolbar-item-text">
-            <i class="fi fi-rs-map-marker"></i></span>&nbsp;
+              &nbsp;<i class="fi fi-rs-map-marker"></i></span>&nbsp;
             <span class="toolbar-item-text"> Seguimiento de Barrido</span>
           </div>
 
@@ -1390,13 +1349,6 @@
           <p>Contenido del reporte</p>
 
         </div>
-        <div class="modal-footer">
-          <div class="row w-100">
-            <div class="col-6 text-right">
-              <button type="button" class="btn btn-primary">Buscar</button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -1406,20 +1358,9 @@
     aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <!--<div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-10 dragable_touch d-block">
-              <h5 class="modal-title">Informe Estadístico</h5>
-            </div>
-            <div class="col-md-2">
-              <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
-            <span class="toolbar-item-text"><i class="fi fi-rs-chart-pie-alt"></i></span>&nbsp;
+            <span class="toolbar-item-text"> &nbsp;<i class="fi fi-rs-chart-pie-alt"></i></span>&nbsp;
             <span class="toolbar-item-text"> Informe Estadístico</span>
           </div>
 
@@ -1440,42 +1381,30 @@
   <!-- dragable modal Mapas Base -->
   <div class="modal fade dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-       <!-- <div class="modal-header w-100">
-          <div class="row m-0 w-100">
-            <div class="col-md-10 dragable_touch d-block">
-              <h5 class="modal-title">Galeria de mapas</h5>
-            </div>
-            <div class="col-md-2">
-              <button type="button" class="close close_btn" onclick="cerrarModal()" data-dismiss="modal"
-                aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-            </div>
-          </div>
-        </div>-->
-        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
-          <div class="btn-group-m" role="group" aria-label="First group">
+      <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+        <div class="btn-group-m" role="group" aria-label="First group">
           <span class="toolbar-item-text"><i class="fi fi-rr-world"></i></span>&nbsp;
-            <span class="toolbar-item-text"> Galería de mapas</span>
-          </div>
-
-          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
-              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-          </div>
+          <span class="toolbar-item-text"> Galería de mapas</span>
         </div>
 
-        <div class="modal-body p-3">
-          <div class="pt-lg pb-md">
-            <div class="sidebar-body">
-              <div data-dojo-type="dijit/layout/ContentPane">
-                <div id="basemapGallery"></div>
-              </div>
+        <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+          <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()" aria-label="Close"
+            data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
 
+      <div class="modal-body p-3">
+        <div class="pt-lg pb-md">
+          <div class="sidebar-body">
+            <div data-dojo-type="dijit/layout/ContentPane">
+              <div id="basemapGallery"></div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   </div>
 
@@ -1536,6 +1465,15 @@
 
 
   <script type="text/javascript">
+
+    $(document).ready(function () {
+      abrirModalCondiciones();
+    });
+
+    function abrirModalCondiciones() {
+      $('#ModalCondiciones').modal('show')
+    }
+
     window.addEventListener('load', () => {
       const contenedor = document.querySelector('.loader-wrapper');
       contenedor.style.opacity = 0;
@@ -1701,6 +1639,8 @@
     });
 
     $(document).ready(function () {
+
+      abrirLeyenda();
       // Handler para el botón de búsqueda
       $('#btnBuscarJefe').on('click', function () {
         var valorFiltro = $('#dniJefe').val().trim();
@@ -1816,6 +1756,27 @@
       });
     }
 
+    function abrirLeyenda() {
+      //open modal
+      $('#modalLeyenda').modal({
+        backdrop: false,
+        show: true
+      });
+      // reset modal if it isn't visible
+      if (!($('.modal.in').length)) {
+        $('.modal-dialog').css({
+          bottom: 200,
+          left: 80
+        });
+      }
+
+      $('.modal-dialog').draggable({
+        cursor: "move",
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
+      });
+    }
+
     function abrirModalMapaBase() {
       //open modal
       $('#modalMapaBase').modal({
@@ -1874,6 +1835,12 @@
       $("#iDescarga").removeClass('li_active');
 
     }
+
+    function cerrarModalCondiciones() {
+      console.log("entró a cerrarModalCondiciones");
+      $('#ModalCondiciones').modal("hide")
+    }
+
 
     function abrirlModalCapas() {
       $("#iCapas").addClass("li_active");
