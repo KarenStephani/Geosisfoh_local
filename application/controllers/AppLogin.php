@@ -25,7 +25,7 @@ class AppLogin extends CI_Controller
         } else if ($this->input->server('REQUEST_METHOD') == 'POST') {
 
             if ($_SESSION['token'] == $_POST["token"]) {     
-                $url = 'https://operaciones.sisfoh.gob.pe:451/sisfohcomunservicio/obtenerUsuarioSeguridad';
+                $url = 'http://144.22.49.31:8110/sisfohcomunservices/obtenerUsuarioSeguridad';
                 $usuario = $this->security->xss_clean($this->input->post('user_name'));
                 $contrasena = $this->security->xss_clean($this->input->post('user_clave'));
                 $idSistema = 19;

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="<?= base_url() ?>media/new_front/css/vendors.min.css" />
   <link rel="stylesheet" href="<?= base_url() ?>media/new_front/css/github.min.css" />
   <link rel="stylesheet" href="<?= base_url() ?>media/new_front/css/main.min.css" />
+  <link rel="stylesheet" href="<?= base_url() ?>media/new_front/css/window-engine.css" />
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://js.arcgis.com/3.44/dijit/themes/claro/claro.css">
@@ -30,6 +31,15 @@
   <link rel='stylesheet' href='<?= base_url() ?>media/new_front/css/icons/uicons-regular-straight.css'>
   <link rel='stylesheet' href='<?= base_url() ?>media/new_front/css/icons/uicons-thin-rounded.css'>
   <link rel='stylesheet' href='<?= base_url() ?>media/new_front/css/icons/uicons-regular-rounded.css'>
+  <style>
+    #draggablePanelList2 .panel-heading {
+      cursor: move;
+    }
+
+    #draggablePanelList2 .panel-heading {
+      cursor: move;
+    }
+  </style>
 </head>
 
 <body>
@@ -122,6 +132,14 @@
                   <i class="fi fi-rr-book-bookmark fa-2x"></i>
                 </a>
               </li><!-- Manual -->
+              <li class="nav-item">
+                <a class="nav-link collapsed" >
+                  <span id="button1" data-toggle="tooltip" title="Leyenda">
+                  <i class="fi fi-rr-book-alt fa-2x"></i>
+                  </span>
+                </a>
+              </li>
+                <!--leyenda-->
             </ul>
           </nav>
         </div>
@@ -354,18 +372,18 @@
             </div>
             <div id="suggestions"></div>
           </span>
-          <button type="button" id="plus" class="btn btn-secondary-sup btn-icon btn-dist custom-tooltip"
-            data-tooltip="Zoom Más"><i class="fa fa-plus"></i></button>
-          <button type="button" id="minus" class="btn btn-secondary-sup btn-icon custom-tooltip"
-            data-tooltip="Zoom Menos"><i class="fa fa-minus"></i></button>
-          <button type="button" id="zoom_in" class="btn btn-secondary-sup btn-icon custom-tooltip"
-            data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></button>
-          <button type="button" id="zoom_out" class="btn btn-secondary-sup btn-icon custom-tooltip"
-            data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></button>
-          <button type="button" id="peru" class="btn btn-secondary-sup btn-icon custom-tooltip"
-            data-tooltip="Extensión Predeterminada"></button>
-          <button type="button" id="btn-indentity" class="btn btn-secondary-sup btn-icon custom-tooltip"
-            data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></button>
+          <a id="plus" class=" btn-dist text-white"
+            data-tooltip="Zoom Más"><i class="fa fa-plus"></i></a>
+          <a id="minus" class="btn-dist  text-white"
+            data-tooltip="Zoom Menos"><i class="fa fa-minus"></i></a>
+          <a id="zoom_in" class="btn-dist text-white"
+            data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></a>
+          <a id="zoom_out" class="btn-dist text-white"
+            data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></a>
+          <a id="peru" class="btn-dist text-white"
+            data-tooltip="Extensión Predeterminada"></a>
+          <a id="btn-indentity" class="btn-dist text-white"
+            data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></a>
           <!-- <button type="button" id="btn-mapas-base" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_gallery" data-tooltip="Galería de Mapas"></button>
                         <button type="button" id="btn-capas-base" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_capas" data-tooltip="Capas"></button>
                         <button type="button" id="btn-report" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_report" data-tooltip="Avance Barrido 2024"><i class="fa fa-chart-bar"></i></button>                       
@@ -437,6 +455,31 @@
                 </div>-->
       </div>
       <div class="main-content-body" id="MapaDiv">
+
+        <div class="windowGroup">
+
+          <!-- WINDOW 1 -->
+
+          <div id="window1" class="card window" style="display: initial;" role="document">
+            <div class="fondoazul">
+              <p class="windowTitle"><i class="fi fi-rr-book-alt"></i>&nbsp;Leyenda</p>
+            </div>
+            <div class="card-body ">
+              <p class="card-text">Texto de Ejemplo.</p>
+              <p class="card-text">Texto de Ejemplo.</p>
+              <p class="card-text">Texto de Ejemplo.</p>
+              <p class="card-text">Texto de Ejemplo.</p>
+              <p class="card-text">Texto de Ejemplo.</p>
+
+
+            </div>
+            
+          </div>
+
+         
+
+        </div>
+
         <div id="ReporteInfortabla_AGsisfoh" style="display:none" data-dojo-type="dijit/TitlePane"
           data-dojo-props="title:'Lista de Georreferenciados', closable:false">
           <div id="Tabla" class="tabcontent">
@@ -527,7 +570,11 @@
         </div>
 
       </div>
-      <div class="alert-messages-map text-center"></div>
+      <div class="alert-messages-map text-center">
+
+
+
+      </div>
       <div class="narrow-opciones hidden-xs" id="narrow-opciones-op">
         <button type="button" class="btn btn-secondary btn-sm sidebar-compact-normal">
           <i class="fas fa-list"></i> Opciones
@@ -775,7 +822,7 @@
   <!-- dragable modal Leyenda -->
 
 
-  
+
 
   <div id="ModalCondiciones" class="modal" tabindex="-1">
     <div class="modal-dialog-n" style="">
@@ -1269,6 +1316,7 @@
     </div>
   </div>
 
+
   <!-- dragable modal Reporte Seguimiento de Barridos -->
   <div class="modal fade dragable_modal" id="modalSeguimientoBarrido" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
@@ -1320,36 +1368,49 @@
     </div>
   </div>
 
-  <!-- dragable modal Mapas Base -->
-  <div class="modal fade dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <!-- dragable modal Reporte Mapas Base -->
+  <div class="modal fade dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel2">
     <div class="modal-dialog" role="document">
-      <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
-        <div class="btn-group-m" role="group" aria-label="First group">
-          <span class="toolbar-item-text"><i class="fi fi-rr-world"></i></span>&nbsp;
-          <span class="toolbar-item-text"> Galería de mapas</span>
-        </div>
-
-        <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-          <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()" aria-label="Close"
-            data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-        </div>
-      </div>
-
-      <div class="modal-body p-3">
-        <div class="pt-lg pb-md">
-          <div class="sidebar-body">
-            <div data-dojo-type="dijit/layout/ContentPane">
-              <div id="basemapGallery"></div>
-            </div>
-
+      <div class="modal-content">
+        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+          <div class="btn-group-m" role="group" aria-label="First group">
+            <span class="toolbar-item-text"> &nbsp;<i class="fi fi-rr-worl"></i></span>&nbsp;
+            <span class="toolbar-item-text"> Galería de mapas</span>
           </div>
+
+          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
+
+        <div class="modal-body p-3">
+          <p>Contenido de mapas base</p>
+
         </div>
       </div>
     </div>
   </div>
-  </div>
+
+
+  <!-- leyenda-->
+  <div id="draggablePanelList2" class="">
+    <div class="panel panel-default">
+      <div class="panel-heading">You cand drag this panel.</div>
+      <div class="panel-body">Content hedfsre ...</div>
+    </div>
+
   </div>
 
+  <footer>
+		
+		<span id="button2">2</span>
+		<span id="button3">3</span>
+		<span id="button4">4</span>
+		<span id="button5">5</span>
+		<span id="button6">6</span>
+	</footer>
 
   <script src="<?= base_url() ?>media/new_front/js/xlsx.full.min.js"></script>
   <script>
@@ -1397,6 +1458,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <!-- <script src="<?= base_url() ?>media/new_front/js/vendors.min.js"></script>-->
+  <script src="<?= base_url() ?>media/new_front/js/window-engine.js"></script>
   <script src="<?= base_url() ?>media/new_front/js/main.min.js"></script>
   <script src="<?= base_url() ?>media/new_front/js/highlight.min.js"> </script>
   <script src="<?= base_url() ?>media/new_front/js/script.min.js"></script>
@@ -1404,7 +1466,7 @@
   <script src="<?= base_url() ?>media/static_admin/assets/vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="https://js.arcgis.com/3.44/"></script>
   <script src="<?= base_url() ?>media/static_map/app.js"></script>
-
+  
 
   <script type="text/javascript">
 
@@ -1413,7 +1475,13 @@
     });
 
     function abrirModalCondiciones() {
-      $('#ModalCondiciones').modal('show')
+      $('#ModalCondiciones').modal('show');
+
+      $('#window1').draggable({
+        cursor: "move",
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
+      });
     }
 
     window.addEventListener('load', () => {
@@ -1582,7 +1650,7 @@
 
     $(document).ready(function () {
 
-      abrirLeyenda();
+     // abrirLeyenda();
       // Handler para el botón de búsqueda
       $('#btnBuscarJefe').on('click', function () {
         var valorFiltro = $('#dniJefe').val().trim();
@@ -1705,12 +1773,12 @@
         show: true
       });
       // reset modal if it isn't visible
-     /* if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
-          top: 200,
-          left: 80
-        });
-      }*/
+      /* if (!($('.modal.in').length)) {
+         $('.modal-dialog').css({
+           top: 200,
+           left: 80
+         });
+       }*/
 
       $('.modal-dialog').draggable({
         cursor: "move",
@@ -1937,6 +2005,25 @@
         containment: "#MapaDiv"
       });
     }
+
+    jQuery(function ($) {
+      var panelList2 = $('#draggablePanelList2');
+
+      panelList2.sortable({
+        containment: "#MapaDiv",
+        // Only make the .panel-heading child elements support dragging.
+        // Omit this to make then entire <li>...</li> draggable.
+        handle: '.panel-heading',
+        update: function () {
+          $('.panel', panelList2).each(function (index, elem) {
+            var $listItem = $(elem),
+              newIndex = $listItem.index();
+
+            // Persist the new indices.
+          });
+        }
+      });
+    });
   </script>
 
 
