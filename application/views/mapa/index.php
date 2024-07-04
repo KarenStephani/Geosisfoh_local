@@ -32,15 +32,6 @@
     <link rel='stylesheet' href='<?= base_url() ?>media/new_front/css/icons/uicons-regular-straight.css'>
     <link rel='stylesheet' href='<?= base_url() ?>media/new_front/css/icons/uicons-thin-rounded.css'>
     <link rel='stylesheet' href='<?= base_url() ?>media/new_front/css/icons/uicons-regular-rounded.css'>
-    <style>
-    #draggablePanelList2 .panel-heading {
-        cursor: move;
-    }
-
-    #draggablePanelList2 .panel-heading {
-        cursor: move;
-    }
-    </style>
 </head>
 
 <body>
@@ -861,10 +852,6 @@
 
     </div>
     <!-- dragable modal Leyenda -->
-
-
-
-
     <div id="ModalCondiciones" class="modal" tabindex="-1">
         <div class="modal-dialog-n" style="">
             <div class="modal-content">
@@ -969,6 +956,8 @@
 
                         </select>
                     </div>
+
+                    <button type="button" id="clear_map" class="btn btn-success btn-sm"><i class="fas fa-broom"></i> Limpiar</button>
                 </div>
             </div>
         </div>
@@ -1376,8 +1365,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- dragable modal Reporte Seguimiento de Barridos -->
     <div class="modal fade dragable_modal" id="modalSeguimientoBarrido" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel2">
@@ -1404,7 +1391,6 @@
             </div>
         </div>
     </div>
-
     <!-- dragable modal Reporte Información estadistica -->
     <div class="modal fade dragable_modal" id="modalEstadistica" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel2">
@@ -1430,7 +1416,6 @@
             </div>
         </div>
     </div>
-
     <!-- dragable modal Reporte Mapas Base -->
     <div class="modal fade dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel2">
@@ -1461,18 +1446,15 @@
         </div>
     </div>
 
-
     <!-- leyenda-->
     <div id="draggablePanelList2" class="">
         <div class="panel panel-default">
             <div class="panel-heading">You cand drag this panel.</div>
             <div class="panel-body">Content hedfsre ...</div>
         </div>
-
     </div>
 
     <footer>
-
         <span id="button2">2</span>
         <span id="button3">3</span>
         <span id="button4">4</span>
@@ -1506,7 +1488,6 @@
     }
     </script>
 
-
     <script type="text/javascript">
     var base_url = "<?= base_url() ?>";
 
@@ -1521,12 +1502,10 @@
 
     <!-- <script src="static/js/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
-        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <!-- <script src="<?= base_url() ?>media/new_front/js/vendors.min.js"></script>-->
-    <script src="<?= base_url() ?>media/new_front/js/window-engine.js"></script>
+   <!-- <script src="<?= base_url() ?>media/new_front/js/vendors.min.js"></script>-->
     <script src="<?= base_url() ?>media/new_front/js/main.min.js"></script>
     <script src="<?= base_url() ?>media/new_front/js/highlight.min.js"> </script>
     <script src="<?= base_url() ?>media/new_front/js/script.min.js"></script>
@@ -1534,7 +1513,17 @@
     <script src="<?= base_url() ?>media/static_admin/assets/vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="https://js.arcgis.com/3.44/"></script>
     <script src="<?= base_url() ?>media/static_map/app.js"></script>
+   <!-- <script src="<?=base_url()?>media/static_base/js/vendors.min.js"></script>
+        <script src="<?=base_url()?>media/static_base/js/main.min.js"></script>
+        <script src="<?=base_url()?>media/static_base/js/highlight.min.js"> </script>
+        <script src="<?=base_url()?>media/static_base/js/script.min.js"></script>
+        <script src="<?= base_url() ?>media/static_admin/assets/vendor/bootbox.min.js"></script>  
+        <script src="<?= base_url() ?>media/static_admin/assets/vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="https://js.arcgis.com/3.44/"></script>
+        <script src="<?=base_url()?>media/static_map/app.js"></script>   -->
 
+   
+    <script src="<?= base_url() ?>media/new_front/js/window-engine.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function() {
@@ -1781,15 +1770,14 @@
 
     <?php } ?>
     </script>
-
-    <?php if ($user["es_municipal"] == true) { ?>
+ <?php if ($user["es_municipal"] == true) { ?>
     <script src="<?= base_url() ?>media/static_map/map_municipal.js"></script>
     <?php } else { ?>
     <script src="<?= base_url() ?>media/static_map/app_map.js"></script>
     <?php } ?>
 
 
-    <!-- scripts frontend  -->
+    <!-- scripts  new frontend  -->
     <script type="text/javascript">
     function abrirModalSeguimientoBarrido() {
         $('#modalSeguimientoBarrido').modal({
