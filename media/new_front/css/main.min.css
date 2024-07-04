@@ -204,11 +204,12 @@
   }
   
   .dragable_modal .modal-content {
-  
-    max-height: 400px;
+   
+    max-height: 500px;
     overflow: hidden;
     resize: both;
-    max-width:300px;
+    min-width:230px;
+    max-width: 300px;
   }
     
   .dragable_modal .modal-body{

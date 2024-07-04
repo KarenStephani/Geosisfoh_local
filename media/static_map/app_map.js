@@ -34,7 +34,7 @@ global.selectionToolbar_ag;
  global.url_cenepred ="https://geosisfoh.midis.gob.pe/server/rest/services/Geosisfoh/PERU_MIDIS_CENEPRED_001_INUND_MMASA/MapServer";
  global.url_report_du ="https://geosisfoh.midis.gob.pe/server/rest/services/Geosisfoh/PERU_MIDIS_1806_DGFIS_BARRIDO/MapServer";
 
-
+console.log("cargo app_map");
 require([
         "esri/map",
         "esri/dijit/Scalebar",
@@ -1077,6 +1077,7 @@ function setupLayerList(map) {
 
 
    $("#ccdep").change(function() {
+    console.log("entro a cambio departamento");
        var ccdep=$(this).val();  
              set_graphic({
                     service: global.layer_map+"/7",
