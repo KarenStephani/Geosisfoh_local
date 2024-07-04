@@ -969,9 +969,6 @@
 
                         </select>
                     </div>
-                    <div class="form-group p-2">
-                        <button type="button" class="btn btn-primary">Buscar</button>
-                    </div>
                 </div>
             </div>
         </div>
