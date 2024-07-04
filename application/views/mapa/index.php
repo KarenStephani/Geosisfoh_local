@@ -756,13 +756,13 @@
                         <i class="fas fa-times-circle icon icon-sm hover-gray ul-sidebar-panel-close"></i>
                     </div>
                 </div>
-                <div class="sidebar-body" data-suppress-scroll-x="true">
+               <!--<div class="sidebar-body" data-suppress-scroll-x="true">
 
                     <div data-dojo-type="dijit/layout/ContentPane" class="scroll-mapas">
                         <div id="basemapGallery"></div>
                     </div>
 
-                </div>
+                </div>-->
 
                 <!--<div class="px-xl py-md">
                     <a class="btn btn-opacity btn-primary w-full">Boton para funcionalidad</a>
@@ -1450,7 +1450,11 @@
                 </div>
 
                 <div class="modal-body p-3">
-                    <p>Contenido de mapas base</p>
+                <div data-dojo-type="dijit/layout/ContentPane" class="scroll-mapas">
+                        <div id="basemapGallery"></div>
+                    </div>
+
+                </div>
 
                 </div>
             </div>
