@@ -363,13 +363,28 @@
             </div>
             <div id="suggestions"></div>
           </span>
-          <a id="plus" class=" btn-dist text-white" data-tooltip="Zoom Más"><i class="fa fa-plus"></i></a>
-          <a id="minus" class="btn-dist  text-white" data-tooltip="Zoom Menos"><i class="fa fa-minus"></i></a>
+          <div id="plus" class="rounded btn-dist text-white p-2">
+            <a data-tooltip="Zoom Más"><i class="fa fa-plus"></i></a>
+          </div>
+          <div id="minus" class="rounded btn-dist text-white p-2">
+            <a data-tooltip="Zoom Menos"><i class="fa fa-minus"></i></a>
+          </div>
+
+
           <a id="zoom_in" class="btn-dist text-white" data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></a>
           <a id="zoom_out" class="btn-dist text-white" data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></a>
-          <a id="peru" class="btn-dist text-white" data-tooltip="Extensión Predeterminada"></a>
-          <a id="btn-indentity" class="btn-dist text-white" data-tooltip="Info de Zona y Mzna"><i
-              class="fa fa-info"></i></a>
+
+
+         
+          <div id="btn-peru" class="rounded btn-dist text-white p-2">
+          <a class="btn-dist text-white" data-tooltip="Extensión Predeterminada"></a>
+          </div>
+
+          <div id="btn-indentity" class="rounded btn-dist text-white p-2">
+            <a data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></a>
+          </div>
+
+
           <!-- <button type="button" id="btn-mapas-base" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_gallery" data-tooltip="Galería de Mapas"></button>
                         <button type="button" id="btn-capas-base" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_capas" data-tooltip="Capas"></button>
                         <button type="button" id="btn-report" class="btn btn-secondary-sup btn-icon custom-tooltip" data-sidebar-panel="asideNotification_report" data-tooltip="Avance Barrido 2024"><i class="fa fa-chart-bar"></i></button>                       
@@ -446,7 +461,7 @@
 
           <!-- WINDOW 1 -->
 
-          <div id="window1" class="card window" style="display: initial;"role="document">
+          <div id="window1" class="card window" style="display: initial;" role="document">
             <div class="fondoazul">
               <p class="windowTitle"><i class="fi fi-rr-book-alt"></i>&nbsp;Leyenda</p>
             </div>
@@ -937,21 +952,62 @@
             <button type="button" class="btn btn-secondary btn-block row m-1" data-toggle="collapse"
               data-target="#collapsible-1" data-parent="#myAccordion">Cartografía censal (INEI)</button>
             <div id="collapsible-1" class="collapse  row m-1">
-              <ul class="gh-tree p-0 m-0">
-                <li id="li_layer_7b78e4d9-21ce-4c4f-aaa5-0ffa7cd27ab2" class="text-truncate gh-sortable"><strong
-                    class="expanded">&nbsp;</strong><button type="button"
-                    class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1"><i
-                      class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
-                      aria-expanded="false"></i></button><input type="checkbox"
-                    id="layer_7b78e4d9-21ce-4c4f-aaa5-0ffa7cd27ab2_1" value="1"><span
-                    title="Puntos de Acopio RAEE">Puntos de Acopio RAEE</span>
-                  <ul class="">
-                    <li class="text-truncate"><strong class="plained">&nbsp;</strong><img
-                        src="https://geoservidorperu.minam.gob.pe/arcgis/rest/services/ServicioTematico/MapServer/1/images/132d8c5963738347d332ba6fd3ec004d"
-                        style=""><span title=""></span><br>
-                    </li>
-                  </ul>
+              <ul>
+                <li class="text-truncate">
+                  <strong class="expanded">&nbsp;</strong>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
+                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false"></i>
+                  </button>
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                    title="Puntos de Acopio RAEE">Límite Departamento</span>
                 </li>
+                <li class="text-truncate">
+                  <strong class="expanded">&nbsp;</strong>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
+                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false"></i>
+                  </button>
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                    title="Puntos de Acopio RAEE">Límite Provincia</span>
+                </li>
+                <li class="text-truncate">
+                  <strong class="expanded">&nbsp;</strong>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
+                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false"></i>
+                  </button>
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                    title="Puntos de Acopio RAEE">Límite Censal</span>
+                </li>
+                <li class="text-truncate">
+                  <strong class="expanded">&nbsp;</strong>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
+                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false"></i>
+                  </button>
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                    title="Puntos de Acopio RAEE">Centros Poblados</span>
+                </li>
+                <li class="text-truncate">
+                  <strong class="expanded">&nbsp;</strong>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
+                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false"></i>
+                  </button>
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                    title="Puntos de Acopio RAEE">Zonas Censales</span>
+                </li>
+                <li class="text-truncate">
+                  <strong class="expanded">&nbsp;</strong>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
+                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false"></i>
+                  </button>
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                    title="Puntos de Acopio RAEE">Manzanas Censales</span>
+                </li>
+
               </ul>
 
             </div>
@@ -1308,13 +1364,6 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <div class="row w-100">
-          <div class="col-6 text-right">
-            <button type="button" class="btn btn-primary">Buscar</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- dragable modal Reporte Seguimiento de Barridos -->
@@ -1395,7 +1444,7 @@
   </div>
 
   <!-- leyenda-->
-  <footer>
+  <footer style="display:none">
     <span id="button2">2</span>
     <span id="button3">3</span>
     <span id="button4">4</span>
@@ -1473,8 +1522,8 @@
     });
 
     function abrirModalCondiciones() {
-      $('#ModalCondiciones').modal('show');
-
+      //$('#ModalCondiciones').modal('show');
+      $('#ModalCondiciones').modal({ backdrop: 'static', keyboard: false }, "show");
       /*$('#window1').draggable({
         cursor: "move",
         handle: ".dragable_touch",
@@ -1486,7 +1535,7 @@
         containment: "#MapaDiv"
       });
       $("#window1").resizable();
-    
+
 
     }
 
@@ -1729,46 +1778,6 @@
 
   <!-- scripts  new frontend  -->
   <script type="text/javascript">
-    function abrirModalSeguimientoBarrido() {
-      $('#modalSeguimientoBarrido').modal({
-        backdrop: false,
-        show: true
-      });
-      // reset modal if it isn't visible
-      if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
-          top: 65,
-          left: screen.width - 240
-        });
-      }
-
-      $('.modal-dialog').draggable({
-        cursor: "move",
-        handle: ".dragable_touch",
-        containment: "#MapaDiv"
-      });
-    }
-
-    function abrirModalEstadistica() {
-      //open modal
-      $('#modalEstadistica').modal({
-        backdrop: false,
-        show: true
-      });
-      // reset modal if it isn't visible
-      if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
-          top: 65,
-          left: screen.width - 240
-        });
-      }
-
-      $('.modal-dialog').draggable({
-        cursor: "move",
-        handle: ".dragable_touch",
-        containment: "#MapaDiv"
-      });
-    }
 
     function abrirLeyenda() {
       //open modal
@@ -1791,50 +1800,6 @@
       });
     }
 
-    function abrirModalMapaBase() {
-      //open modal
-      $('#modalMapaBase').modal({
-        backdrop: false,
-        show: true
-      });
-      // reset modal if it isn't visible
-      if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
-          top: 65,
-          left: screen.width - 240
-        });
-      }
-
-      $('.modal-dialog').draggable({
-        cursor: "move",
-        handle: ".dragable_touch",
-        containment: "#MapaDiv"
-      });
-    }
-
-    function abrirlModalBusqueda() {
-      //open modal
-      $(".li_active").not($("#liFiltros").addClass('li_active')).removeClass('li_active');
-
-      $('#modalFiltros').modal({
-        backdrop: false,
-        show: true,
-
-      });
-      // reset modal if it isn't visible
-      if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
-          top: 65,
-          left: 65
-        });
-      }
-
-      $('.modal-dialog').draggable({
-        cursor: "move",
-        handle: ".dragable_touch",
-        containment: "#MapaDiv"
-      });
-    }
 
     function cerrarModal() {
       $("#liFiltros").removeClass('li_active');
@@ -2006,25 +1971,92 @@
         containment: "#MapaDiv"
       });
     }
-
-    jQuery(function ($) {
-      var panelList2 = $('#draggablePanelList2');
-
-      panelList2.sortable({
-        containment: "#MapaDiv",
-        // Only make the .panel-heading child elements support dragging.
-        // Omit this to make then entire <li>...</li> draggable.
-        handle: '.panel-heading',
-        update: function () {
-          $('.panel', panelList2).each(function (index, elem) {
-            var $listItem = $(elem),
-              newIndex = $listItem.index();
-
-            // Persist the new indices.
-          });
-        }
+    function abrirModalMapaBase() {
+      //open modal
+      $('#modalMapaBase').modal({
+        backdrop: false,
+        show: true
       });
-    });
+      // reset modal if it isn't visible
+      if (!($('.modal.in').length)) {
+        $('.modal-dialog').css({
+          top: 65,
+          left: screen.width - 300,
+
+        });
+      }
+
+      $('.modal-dialog').draggable({
+        cursor: "move",
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
+      });
+    }
+
+    function abrirlModalBusqueda() {
+      //open modal
+      $(".li_active").not($("#liFiltros").addClass('li_active')).removeClass('li_active');
+
+      $('#modalFiltros').modal({
+        backdrop: false,
+        show: true,
+
+      });
+      // reset modal if it isn't visible
+      if (!($('.modal.in').length)) {
+        $('.modal-dialog').css({
+          top: 65,
+          left: 65
+        });
+      }
+
+      $('.modal-dialog').draggable({
+        cursor: "move",
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
+      });
+    }
+    function abrirModalSeguimientoBarrido() {
+      $('#modalSeguimientoBarrido').modal({
+        backdrop: false,
+        show: true
+      });
+      // reset modal if it isn't visible
+      if (!($('.modal.in').length)) {
+        $('.modal-dialog').css({
+          top: 65,
+          left: screen.width - 300
+        });
+      }
+
+      $('.modal-dialog').draggable({
+        cursor: "move",
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
+      });
+    }
+
+    function abrirModalEstadistica() {
+      //open modal
+      $('#modalEstadistica').modal({
+        backdrop: false,
+        show: true
+      });
+      // reset modal if it isn't visible
+      if (!($('.modal.in').length)) {
+        $('.modal-dialog').css({
+          top: 65,
+          left: screen.width - 300
+        });
+      }
+
+      $('.modal-dialog').draggable({
+        cursor: "move",
+        handle: ".dragable_touch",
+        containment: "#MapaDiv"
+      });
+    }
+
   </script>
 
 
