@@ -373,12 +373,7 @@
 
           <a id="zoom_in" class="btn-dist text-white" data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></a>
           <a id="zoom_out" class="btn-dist text-white" data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></a>
-
-
-         
-          <div id="btn-peru" class="rounded btn-dist text-white p-2">
-          <a class="btn-dist text-white" data-tooltip="Extensión Predeterminada"></a>
-          </div>
+          <a id="peru" class=" btn-dist btn-icon custom-tooltip" data-tooltip="Extensión Predeterminada"></a>
 
           <div id="btn-indentity" class="rounded btn-dist text-white p-2">
             <a data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></a>
@@ -461,7 +456,7 @@
 
           <!-- WINDOW 1 -->
 
-          <div id="window1" class="card window" style="display: initial;" role="document">
+          <div id="window1" class="card window" style="display: initial;">
             <div class="fondoazul">
               <p class="windowTitle"><i class="fi fi-rr-book-alt"></i>&nbsp;Leyenda</p>
             </div>
@@ -471,8 +466,6 @@
               <p class="card-text">Texto de Ejemplo.</p>
               <p class="card-text">Texto de Ejemplo.</p>
               <p class="card-text">Texto de Ejemplo.</p>
-
-
             </div>
 
           </div>
@@ -921,9 +914,11 @@
 
             </select>
           </div>
-
+          <div class="m-2">
           <button type="button" id="clear_map" class="btn btn-success btn-sm"><i class="fas fa-broom"></i>
-            Limpiar</button>
+          Limpiar</button>
+          </div>
+        
         </div>
       </div>
     </div>
@@ -952,16 +947,20 @@
             <button type="button" class="btn btn-secondary btn-block row m-1" data-toggle="collapse"
               data-target="#collapsible-1" data-parent="#myAccordion">Cartografía censal (INEI)</button>
             <div id="collapsible-1" class="collapse  row m-1">
-              <ul>
+              <ul id="myAccordion2">
                 <li class="text-truncate">
                   <strong class="expanded">&nbsp;</strong>
-                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
-                    <i class="fa fa-cog dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
-                      aria-expanded="false"></i>
+                  <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1" data-toggle="collapse"
+                  data-target="#collapsible-s-1" data-parent="#myAccordion2">
+                    <i class="fa fa-cog"></i>
                   </button>
-                  <input type="checkbox" class="form-check-input " value="1">&nbsp;<span
+                  <input type="checkbox" class="form-check-input " value="1">&nbsp;
+                  <span
                     title="Puntos de Acopio RAEE">Límite Departamento</span>
                 </li>
+                <div id="collapsible-s-1" class="collapse  row m-1">
+                  <p>hola</p>
+                </div>
                 <li class="text-truncate">
                   <strong class="expanded">&nbsp;</strong>
                   <button type="button" class="btn gh-btn-config badge ml-auto float-right" id="opt_1" data-id="1">
