@@ -948,6 +948,12 @@
             <button type="button" class="btn btn-secondary btn-block row m-1" data-toggle="collapse"
               data-target="#collapsible-1" data-parent="#myAccordion">Cartografía censal (INEI)</button>
             <div id="collapsible-1" class="collapse  row m-1">
+
+              <!--<div id="layerListPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'right'">
+                <div id="layerList"></div>
+
+              </div>-->
+
               <ul id="myAccordion2">
                 <li class="text-truncate">
                   <strong class="expanded">&nbsp;</strong>
@@ -959,25 +965,23 @@
                   <span title="Puntos de Acopio RAEE">Límite Departamento</span>
                 </li>
                 <div id="collapsible-s-1" class="collapse row">
-                  <!-- Default Tabs -->
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">Transparencia</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">Mapa</button>
-                    </li>
+
+                  <!--DIV TABS-->
+                  <ul class="nav nav-tabs">
+                    <li data-active="#menu1"><a data-toggle="tab" class="active" href="#menu1">Transparencia</a></li>
+                    <li data-active="#menu2"><a data-toggle="tab" href="#menu2">Mapa</a></li>
                   </ul>
-                  <div class="tab-content pt-2" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                      Datos de Transparencia
+
+                  <div class="tab-content">
+                    <div id="menu1" class="tab-pane fade in active show">
+                      <p>Info de transparencia</p>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      Datos de Mapa
+                    <div id="menu2" class="tab-pane fade">
+                      <p>Info de Mapa</p>
                     </div>
-                  </div><!-- End Default Tabs -->
+                  </div>
+                  <!-- END DIVS  -->
+
                 </div>
 
                 <li class="text-truncate">

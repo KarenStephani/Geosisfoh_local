@@ -159,7 +159,60 @@
 
 
 /*nuevas clases*/
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-tabs>li>a.active, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
 
+.nav-tabs>li>a {
+    margin-right: 1px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 5px;
+}
+.nav-tabs>li>a:hover {
+    border-color: #eee #eee #ddd;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color:#acb4bc;
+}
+
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+a {
+    color: #181d21;
+    text-decoration: none;
+}
 .puntero{
  cursor: pointer;
 }
@@ -11596,13 +11649,12 @@ select,select.custom-file-control,select.form-control{
 .nav-pills,.nav-tabs{
     border:0
 }
-.nav-pills .nav-link, .nav-tabs .nav-link {
-    padding-right: .8575em;
-    font-size: .875rem;
-    font-weight: 500;
-    border: 0;
+.nav-pills .nav-link,.nav-tabs .nav-link{
+    padding:1.4286em .8575em;
+    font-size:.875rem;
+    font-weight:500;
+    border:0
 }
-
 .nav-pills .nav-item.show .nav-link,.nav-pills .nav-link.active,.nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active{
     background-color:transparent;
     color:inherit
