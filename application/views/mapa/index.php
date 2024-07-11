@@ -365,19 +365,19 @@
             <div id="suggestions"></div>
           </span>
           <div id="plus" class="rounded btn-dist text-white p-2">
-            <a data-tooltip="Zoom Más"><i class="fa fa-plus"></i></a>
+            <a data-toggle="tooltip" title="Más"><i class="fa fa-plus"></i></a>
           </div>
           <div id="minus" class="rounded btn-dist text-white p-2">
-            <a data-tooltip="Zoom Menos"><i class="fa fa-minus"></i></a>
+            <a data-toggle="tooltip" title="Menos"><i class="fa fa-minus"></i></a>
           </div>
 
 
-          <a id="zoom_in" class="btn-dist text-white" data-tooltip="Zoom Más"><i class="fa fa-search-plus"></i></a>
-          <a id="zoom_out" class="btn-dist text-white" data-tooltip="Zoom Menos"><i class="fa fa-search-minus"></i></a>
-          <a id="peru" class=" btn-dist btn-icon custom-tooltip" data-tooltip="Extensión Predeterminada"></a>
+          <a id="zoom_in" class="btn-dist text-white"  data-toggle="tooltip" title="Zoom Más"><i class="fa fa-search-plus"></i></a>
+          <a id="zoom_out" class="btn-dist text-white" data-toggle="tooltip" title="Zoom Menos" ><i class="fa fa-search-minus"></i></a>
+          <a id="peru" class=" btn-dist btn-icon" data-toggle="tooltip" title="Extensión Predetermina"></a>
 
           <div id="btn-indentity" class="rounded btn-dist text-white p-2">
-            <a data-tooltip="Info de Zona y Mzna"><i class="fa fa-info"></i></a>
+            <a data-toggle="tooltip" title="Info de Zona y Manzana" ><i class="fa fa-info"></i></a>
           </div>
 
 
@@ -452,27 +452,20 @@
                 </div>-->
       </div>
       <div class="main-content-body" id="MapaDiv">
-
         <div class="windowGroup">
-
           <!-- WINDOW 1 -->
-
           <div id="window1" class="card window" style="display: initial;">
             <div class="fondoazul">
               <p class="windowTitle"><i class="fi fi-rr-book-alt"></i>&nbsp;Leyenda</p>
             </div>
             <div class="card-body ">
-              <p class="card-text">Texto de Ejemplo de leyenda.</p>
+              <p class="card-text">Texto de Ejemplo .</p>
               <p class="card-text">Texto de Ejemplo.</p>
               <p class="card-text">Texto de Ejemplo.</p>
               <p class="card-text">Texto de Ejemplo.</p>
               <p class="card-text">Texto de Ejemplo.</p>
             </div>
-
           </div>
-
-
-
         </div>
 
         <div id="ReporteInfortabla_AGsisfoh" style="display:none" data-dojo-type="dijit/TitlePane"
@@ -841,9 +834,9 @@
   </div>
 
 
-  <div class="modal fade dragable_modal" id="modalFiltros" tabindex="-1" role="dialog" style="postion:absolute;"
+  <div class="dragable_modal" id="modalFiltros" tabindex="-1" style="postion:absolute;"
     aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div id="dialogFiltros" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -853,7 +846,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('liFiltros')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -926,8 +919,8 @@
   </div>
 
   <!-- dragable modal capas -->
-  <div class="modal fade dragable_modal" id="modalCapas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+  <div class="dragable_modal" id="modalCapas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div id="dialogCapas" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -937,7 +930,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iCapas')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1122,8 +1115,8 @@
     </div>
   </div>
   <!-- dragable modal Medir -->
-  <div class="modal fade dragable_modal" id="modalMedicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+  <div class="dragable_modal" id="modalMedicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div id="dialogMedir" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1133,7 +1126,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iMedicion')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1157,9 +1150,9 @@
     </div>
   </div>
   <!-- dragable modal Herramientas de Elevación -->
-  <div class="modal fade dragable_modal" id="modalElevacion" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalElevacion" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div id="dialogElevacion" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1169,7 +1162,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iElevacion')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1191,9 +1184,9 @@
     </div>
   </div>
   <!-- dragable modal Herramientas de Seleccionar -->
-  <div class="modal fade dragable_modal" id="modalSeleccionar" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalSeleccionar" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div id="dialogSeleccionar" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1203,7 +1196,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iSeleccion')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1232,9 +1225,9 @@
     </div>
   </div>
   <!-- dragable modal descargar -->
-  <div class="modal fade dragable_modal" id="modalDescargar" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalDescargar" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div id="dialogDescargar" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1244,7 +1237,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iDescarga')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1311,8 +1304,8 @@
     </div>
   </div>
   <!-- dragable modal imprimir -->
-  <div class="modal fade dragable_modal" id="modalImprimir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+  <div class="dragable_modal" id="modalImprimir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div id="dialogImprimir" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1322,7 +1315,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iImprimir')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1389,7 +1382,7 @@
     </div>
   </div>
   <!-- dragable modal Reporte Seguimiento de Barridos -->
-  <div class="modal fade dragable_modal" id="modalSeguimientoBarrido" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalSeguimientoBarrido" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="documentoBarridos" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1401,7 +1394,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('null')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1414,9 +1407,9 @@
     </div>
   </div>
   <!-- dragable modal Reporte Información estadistica -->
-  <div class="modal fade dragable_modal" id="modalEstadistica" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalEstadistica" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div id="dialogEstadistica" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1438,8 +1431,8 @@
     </div>
   </div>
   <!-- dragable modal Reporte Mapas Base -->
-  <div class="modal fade dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+  <div class="dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div id="dialogMapa" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1448,7 +1441,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('null')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1551,6 +1544,10 @@
         handle: ".dragable_touch",
         containment: "#MapaDiv"
       });*/
+      $('#window1').css({
+        bottom:  10,
+        left: 65
+      });
 
       $("#window1").draggable({
         cursor: "move",
@@ -1801,37 +1798,19 @@
   <!-- scripts  new frontend  -->
   <script type="text/javascript">
 
-    function abrirLeyenda() {
-      //open modal
-      $('#modalLeyenda').modal({
-        backdrop: false,
-        show: true
-      });
-      // reset modal if it isn't visible
-      /* if (!($('.modal.in').length)) {
-         $('.modal-dialog').css({
-           top: 200,
-           left: 80
-         });
-       }*/
-
-      $('.modal-dialog').draggable({
-        cursor: "move",
-        handle: ".dragable_touch",
-        containment: "#MapaDiv"
-      });
-    }
-
-
-    function cerrarModal() {
-      $("#liFiltros").removeClass('li_active');
+    function cerrarModal(id) {
+      if(id!='null'){
+        $("#"+id).removeClass('li_active');
+      }
+      
+      /*$("#liFiltros").removeClass('li_active');
       $("#iMapa").removeClass('li_active');
       $("#iCapas").removeClass('li_active');
       $("#iImprimir").removeClass('li_active');
       $("#iElevacion").removeClass('li_active');
       $("#iMedicion").removeClass('li_active');
       $("#iSeleccion").removeClass('li_active');
-      $("#iDescarga").removeClass('li_active');
+      $("#iDescarga").removeClass('li_active');*/
 
     }
 
@@ -1849,13 +1828,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogCapas').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogCapas').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -1893,13 +1872,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogMedir').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogMedir').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -1915,13 +1894,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogElevacion').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogElevacion').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -1937,13 +1916,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogSeleccionar').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogSeleccionar').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -1959,13 +1938,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogDescargar').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogDescargar').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -1981,18 +1960,19 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogImprimir').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogImprimir').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
       });
     }
+    
     function abrirModalMapaBase() {
       //open modal
       $('#modalMapaBase').modal({
@@ -2001,14 +1981,14 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogMapa').css({
           top: 65,
-          left: screen.width - 300,
+          left: screen.width - 350,
 
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogMapa').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -2026,18 +2006,19 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogFiltros').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogFiltros').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
       });
     }
+    
     function abrirModalSeguimientoBarrido() {
       $('#modalSeguimientoBarrido').modal({
         backdrop: false,
@@ -2045,13 +2026,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#documentoBarridos').css({
           top: 65,
           left: screen.width - 300
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#documentoBarridos').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -2066,13 +2047,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogEstadistica').css({
           top: 65,
           left: screen.width - 300
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogEstadistica').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"

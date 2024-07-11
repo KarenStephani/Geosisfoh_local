@@ -30,7 +30,8 @@ function createWindow(id) {
 			activeWindow(windowID);
         } else {
             windowID.style = "position: absolute;";
-            windowID.style = "top: 80px;";
+            windowID.style = "left: 65px; bottom:10px";
+
             fadeIn(windowID);
         }
     };
@@ -100,7 +101,7 @@ function dragElement(elmnt) {
 }
 
 function fadeIn(elmnt) {
-    elmnt.style.opacity = 0;
+    //elmnt.style.opacity = 0;
     elmnt.style.display = "initial";
     if (elmnt.classList.contains("fade")) {
         var opacity = 0;
@@ -110,11 +111,11 @@ function fadeIn(elmnt) {
                 clearInterval(timer);
                 opacity = 0.9;
             }
-            elmnt.style.opacity = opacity;
+            //elmnt.style.opacity = opacity;
             activeWindow(elmnt);
         }, 50);
     } else {
-        elmnt.style.opacity = "0.9";
+        //elmnt.style.opacity = "0.9";
         activeWindow(elmnt);
     }
 }

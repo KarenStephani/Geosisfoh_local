@@ -1,9 +1,7 @@
 /* Window Engine - MIT License - Copyright (c) 2019 Gauthier Staehler */
 
 .window {
-	left: 30px;
 	position: absolute;
-	top: 60%;
 	z-index: 9;
 	background-color: #f1f1f1;
 	max-width: 200px;
