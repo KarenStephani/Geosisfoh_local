@@ -1814,6 +1814,7 @@
     }
 
     function abrirlModalCapas() {
+      cerrarOtrosModales("btnCerrarCapas");
       $("#iCapas").addClass("li_active");
       //open modal
       $('#modalCapas').modal({
@@ -1996,7 +1997,7 @@
     }
 
     function abrirlModalBusqueda() {
-      cerrarOtrosModales("btnCerrarFiltros");
+    
    //   $("#btnCerrarCapas").trigger("click");
         cerrarOtrosModales("btnCerrarFiltros");
 
