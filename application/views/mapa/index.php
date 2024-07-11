@@ -807,7 +807,7 @@
     </div>
 
   </div>
-  <!-- dragable modal Leyenda -->
+  <!-- dragable modal Condiciones -->
   <div id="ModalCondiciones" class="modal" tabindex="-1">
     <div class="modal-dialog-n" style="">
       <div class="modal-content">
@@ -846,7 +846,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('liFiltros')"
+            <button id="btnCerrarFiltros" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('liFiltros')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -930,7 +930,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iCapas')"
+            <button id="btnCerrarCapas" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iCapas')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1094,7 +1094,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('btn-indentity')"
+            <button id="btnCerrarInformacion" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('btn-indentity')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1126,7 +1126,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iMedicion')"
+            <button id="btnCerrarMedicion" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iMedicion')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1162,7 +1162,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iElevacion')"
+            <button id="btnCerrarElevacion" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iElevacion')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1196,7 +1196,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iSeleccion')"
+            <button id="btnCerrarSeleccionar" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iSeleccion')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1237,7 +1237,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iDescarga')"
+            <button id="btnCerrarDescargar" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iDescarga')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1315,7 +1315,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iImprimir')"
+            <button id="btnCerrarImprimir" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iImprimir')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1394,7 +1394,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('null')"
+            <button id="btnCerrarBarridos" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('null')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1418,7 +1418,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button id="btnCerrarEstadistica" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1441,7 +1441,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('null')"
+            <button id="btnCerrarMapas" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('null')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1836,6 +1836,7 @@
     }
 
     function abrirlModalInformacion() {
+      cerrarOtrosModales("btnCerrarInformacion");
       //open modal
       $('#modalInformacion').modal({
         backdrop: false,
@@ -1857,6 +1858,7 @@
     }
 
     function abrirlModalMedicion() {
+      cerrarOtrosModales("btnCerrarMedicion");
       $("#iMedicion").addClass("li_active");
       //open modal
       $('#modalMedicion').modal({
@@ -1879,6 +1881,7 @@
     }
 
     function abrirlModalElevacion() {
+      cerrarOtrosModales("btnCerrarElevacion");
       $("#iElevacion").addClass("li_active");
       //open modal
       $('#modalElevacion').modal({
@@ -1901,6 +1904,7 @@
     }
 
     function abrirlModalSeleccionar() {
+      cerrarOtrosModales("btnCerrarSeleccionar");
       $("#iSeleccion").addClass("li_active");
       //open modal
       $('#modalSeleccionar').modal({
@@ -1923,6 +1927,7 @@
     }
 
     function abrirlModalDescargar() {
+      cerrarOtrosModales("btnCerrarDescargar");
       $("#iDescarga").addClass("li_active");
       //open modal
       $('#modalDescargar').modal({
@@ -1945,6 +1950,7 @@
     }
 
     function abrirlModalImprimir() {
+      cerrarOtrosModales("btnCerrarImprimir");
       $("#iImprimir").addClass("li_active");
       //open modal
       $('#modalImprimir').modal({
@@ -1967,6 +1973,7 @@
     }
     
     function abrirModalMapaBase() {
+      cerrarOtrosModales("btnCerrarMapas");
       //open modal
       $('#modalMapaBase').modal({
         backdrop: false,
@@ -1989,6 +1996,10 @@
     }
 
     function abrirlModalBusqueda() {
+      cerrarOtrosModales("btnCerrarFiltros");
+   //   $("#btnCerrarCapas").trigger("click");
+        cerrarOtrosModales("btnCerrarFiltros");
+
       $("#liFiltros").addClass("li_active");
         //open modal
       $('#modalFiltros').modal({
@@ -2011,6 +2022,7 @@
     }
     
     function abrirModalSeguimientoBarrido() {
+      cerrarOtrosModales("btnCerrarBarridos");
       $('#modalSeguimientoBarrido').modal({
         backdrop: false,
         show: true
@@ -2031,6 +2043,7 @@
     }
 
     function abrirModalEstadistica() {
+      cerrarOtrosModales("btnCerrarEstadistica");
       //open modal
       $('#modalEstadistica').modal({
         backdrop: false,
@@ -2051,6 +2064,16 @@
       });
     }
 
+
+    function cerrarOtrosModales(btnExcluido){
+      console.log("excluido"+btnExcluido);
+      var botones = ["btnCerrarFiltros", "btnCerrarCapas", "btnCerrarMedicion", "btnCerrarElevacion", "btnCerrarSeleccionar","btnCerrarDescargar","btnCerrarImprimir","btnCerrarBarridos","btnCerrarEstadistica","btnCerrarMapas","btnCerrarInformacion"];
+      for(var i=0;i<botones.length;i++){
+        if(botones[i]!=btnExcluido){
+          $("#"+botones[i]).trigger("click");
+        }
+      }
+    }
   </script>
 
 </body>
