@@ -377,7 +377,7 @@
           <a id="peru" class=" btn-dist btn-icon" data-toggle="tooltip" title="Extensión Predetermina"></a>
 
           <div id="btn-indentity" class="rounded btn-dist text-white p-2">
-            <a data-toggle="tooltip" title="Info de Zona y Manzana" ><i class="fa fa-info"></i></a>
+            <a data-toggle="tooltip" title="Info de Zona y Manzana" onclick="abrirlModalInformacion()" ><i class="fa fa-info"></i></a>
           </div>
 
 
@@ -1082,9 +1082,9 @@
   </div>
 
   <!-- dragable modal información -->
-  <div class="modal fade dragable_modal" id="modalInformacion" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalInformacion" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div id="dialogInformacion" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
           <div class="btn-group-m" role="group" aria-label="First group">
@@ -1094,7 +1094,7 @@
           </div>
 
           <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal()"
+            <button type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('btn-indentity')"
               aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
           </div>
         </div>
@@ -1799,23 +1799,17 @@
   <script type="text/javascript">
 
     function cerrarModal(id) {
+      console.log(id);
       if(id!='null'){
-        $("#"+id).removeClass('li_active');
+        if(id=="btn-indentity"){
+          $("#btn-indentity").removeClass('active-btn');
+        }else{
+          $("#"+id).removeClass('li_active');
+        }
       }
-      
-      /*$("#liFiltros").removeClass('li_active');
-      $("#iMapa").removeClass('li_active');
-      $("#iCapas").removeClass('li_active');
-      $("#iImprimir").removeClass('li_active');
-      $("#iElevacion").removeClass('li_active');
-      $("#iMedicion").removeClass('li_active');
-      $("#iSeleccion").removeClass('li_active');
-      $("#iDescarga").removeClass('li_active');*/
-
     }
 
     function cerrarModalCondiciones() {
-      console.log("entró a cerrarModalCondiciones");
       $('#ModalCondiciones').modal("hide")
     }
 
@@ -1842,7 +1836,6 @@
     }
 
     function abrirlModalInformacion() {
-      $("#liFiltros").addClass("li_active");
       //open modal
       $('#modalInformacion').modal({
         backdrop: false,
@@ -1850,13 +1843,13 @@
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
-        $('.modal-dialog').css({
+        $('#dialogInformacion').css({
           top: 65,
           left: 65
         });
       }
 
-      $('.modal-dialog').draggable({
+      $('#dialogInformacion').draggable({
         cursor: "move",
         handle: ".dragable_touch",
         containment: "#MapaDiv"
@@ -1996,13 +1989,11 @@
     }
 
     function abrirlModalBusqueda() {
-      //open modal
-      $(".li_active").not($("#liFiltros").addClass('li_active')).removeClass('li_active');
-
+      $("#liFiltros").addClass("li_active");
+        //open modal
       $('#modalFiltros').modal({
         backdrop: false,
         show: true,
-
       });
       // reset modal if it isn't visible
       if (!($('.modal.in').length)) {
