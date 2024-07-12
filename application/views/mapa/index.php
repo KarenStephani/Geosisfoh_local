@@ -1533,17 +1533,11 @@
 
   <script type="text/javascript">
     $(document).ready(function () {
-      abrirModalCondiciones();
+      modalesInicio();
     });
 
-    function abrirModalCondiciones() {
-      //$('#ModalCondiciones').modal('show');
+    function modalesInicio() {
       $('#ModalCondiciones').modal({ backdrop: 'static', keyboard: false }, "show");
-      /*$('#window1').draggable({
-        cursor: "move",
-        handle: ".dragable_touch",
-        containment: "#MapaDiv"
-      });*/
       $('#window1').css({
         bottom:  10,
         left: 20

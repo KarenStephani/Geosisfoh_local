@@ -198,8 +198,6 @@
   }
 
   function abrirlModalBusqueda() {
-  
- //   $("#btnCerrarCapas").trigger("click");
       cerrarOtrosModales("btnCerrarFiltros");
 
     $("#liFiltros").addClass("li_active");
