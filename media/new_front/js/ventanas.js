@@ -1,6 +1,5 @@
 
   function cerrarModal(id) {
-    console.log(id);
     if(id!='null'){
       if(id=="btn-indentity"){
         $("#btn-indentity").removeClass('active-btn');
@@ -71,7 +70,8 @@
     if (!($('.modal.in').length)) {
       $('#dialogMedir').css({
         top: 65,
-        left: 70
+        left: 70,
+		zIndex:10
       });
     }
 
@@ -266,7 +266,6 @@
 
 
   function cerrarOtrosModales(btnExcluido){
-    console.log("excluido"+btnExcluido);
     var botones = ["btnCerrarFiltros", "btnCerrarCapas", "btnCerrarMedicion", "btnCerrarElevacion", "btnCerrarSeleccionar","btnCerrarDescargar","btnCerrarImprimir","btnCerrarBarridos","btnCerrarEstadistica","btnCerrarMapas","btnCerrarInformacion"];
     for(var i=0;i<botones.length;i++){
       if(botones[i]!=btnExcluido){

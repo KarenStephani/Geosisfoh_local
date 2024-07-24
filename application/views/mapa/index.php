@@ -452,6 +452,41 @@
                 </div>-->
       </div>
       <div class="main-content-body" id="MapaDiv">
+		<!-- dragable modal Medir -->
+		<div class="dragable_modal" id="modalMedicion" tabindex="-1" style="display:none"  role="dialog" aria-labelledby="myModalLabel2" >
+			<div id="dialogMedir" class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
+				  <div class="btn-group-m" role="group" aria-label="First group">
+					<span class="toolbar-item-text">
+					  &nbsp; <i class="fi fi-tr-ruler-triangle"></i></span>&nbsp;
+					<span class="toolbar-item-text"> Medición</span>
+				  </div>
+
+				  <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
+					<button id="btnCerrarMedicion" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iMedicion')"
+					  aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>
+				<div class="modal-body p-3">
+				  <div class="form">
+					<label class="formulario">Herramienta</label>
+
+					<select class="form-control">
+					  <option>Seleccionar</option>
+					</select>>
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <div class="row w-100">
+					<div class="col-6 text-right">
+					  <button type="button" class="btn btn-primary">Aceptar</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
         <div class="windowGroup">
           <!-- WINDOW 1 -->
           <div id="window1" class="card window" style="display: initial;">
@@ -1114,41 +1149,7 @@
       </div>
     </div>
   </div>
-  <!-- dragable modal Medir -->
-  <div class="dragable_modal" id="modalMedicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div id="dialogMedir" class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
-          <div class="btn-group-m" role="group" aria-label="First group">
-            <span class="toolbar-item-text">
-              &nbsp; <i class="fi fi-tr-ruler-triangle"></i></span>&nbsp;
-            <span class="toolbar-item-text"> Medición</span>
-          </div>
-
-          <div class="btn-group-m ml-auto" role="group" aria-label="Second group">
-            <button id="btnCerrarMedicion" type="button" class="close close_btn" data-dismiss="modal" onclick="cerrarModal('iMedicion')"
-              aria-label="Close" data-backdrop="static" data-keyboard="false"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="modal-body p-3">
-          <div class="form">
-            <label class="formulario">Herramienta</label>
-
-            <select class="form-control">
-              <option>Seleccionar</option>
-            </select>>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <div class="row w-100">
-            <div class="col-6 text-right">
-              <button type="button" class="btn btn-primary">Aceptar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- dragable modal Herramientas de Elevación -->
   <div class="dragable_modal" id="modalElevacion" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel2">
