@@ -672,7 +672,7 @@ a {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .styled-table thead tr {
-    background-color: #193f57;
+    background-color: #034da0;
     color: #ffffff;
     text-align: left;
 }
@@ -2866,12 +2866,12 @@ a.btn.disabled,a.disabled.custom-file-control::before,fieldset:disabled a.btn,fi
 }
 .btn-primary{
     color:#fff;
-    background-color:#0081FF;
+    background-color:#034da0;
     border-color:#0081FF;
     box-shadow:none
 }
 .btn-primary.focus,.btn-primary:focus,.btn-primary:hover{
-    background-color:#006ed9;
+    background-color:#034da0;
     border-color:#0067cc;
     color:#fff
 }
