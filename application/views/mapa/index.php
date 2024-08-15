@@ -453,7 +453,7 @@
       </div>
       <div class="main-content-body" id="MapaDiv">
 		<!-- dragable modal Medir -->
-		<div class="dragable_modal" id="modalMedicion" tabindex="-1" style="display:none"  role="dialog" aria-labelledby="myModalLabel2" >
+		<div class="dragable_modal" id="modalMedicion" style="display:none"  role="dialog" aria-labelledby="myModalLabel2" >
 			<div id="dialogMedir" class="modal-dialog" role="document">
 			  <div class="modal-content">
 				<div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
@@ -869,7 +869,7 @@
   </div>
 
 
-  <div class="dragable_modal" id="modalFiltros" tabindex="-1" style="postion:absolute;"
+  <div class="dragable_modal" id="modalFiltros" style="postion:absolute;"
     aria-labelledby="myModalLabel2">
     <div id="dialogFiltros" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -954,7 +954,7 @@
   </div>
 
   <!-- dragable modal capas -->
-  <div class="dragable_modal" id="modalCapas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="dragable_modal" id="modalCapas" role="dialog" aria-labelledby="myModalLabel2">
     <div id="dialogCapas" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
@@ -1117,7 +1117,7 @@
   </div>
 
   <!-- dragable modal información -->
-  <div class="dragable_modal" id="modalInformacion" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalInformacion" role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="dialogInformacion" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1151,7 +1151,7 @@
   </div>
   
   <!-- dragable modal Herramientas de Elevación -->
-  <div class="dragable_modal" id="modalElevacion" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalElevacion" role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="dialogElevacion" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1185,7 +1185,7 @@
     </div>
   </div>
   <!-- dragable modal Herramientas de Seleccionar -->
-  <div class="dragable_modal" id="modalSeleccionar" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalSeleccionar" role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="dialogSeleccionar" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1226,7 +1226,7 @@
     </div>
   </div>
   <!-- dragable modal descargar -->
-  <div class="dragable_modal" id="modalDescargar" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalDescargar"role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="dialogDescargar" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1305,7 +1305,7 @@
     </div>
   </div>
   <!-- dragable modal imprimir -->
-  <div class="dragable_modal" id="modalImprimir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="dragable_modal" id="modalImprimir" role="dialog" aria-labelledby="myModalLabel2">
     <div id="dialogImprimir" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
@@ -1383,7 +1383,7 @@
     </div>
   </div>
   <!-- dragable modal Reporte Seguimiento de Barridos -->
-  <div class="dragable_modal" id="modalSeguimientoBarrido" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalSeguimientoBarrido" role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="documentoBarridos" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1408,7 +1408,7 @@
     </div>
   </div>
   <!-- dragable modal Reporte Información estadistica -->
-  <div class="dragable_modal" id="modalEstadistica" tabindex="-1" role="dialog"
+  <div class="dragable_modal" id="modalEstadistica" role="dialog"
     aria-labelledby="myModalLabel2">
     <div id="dialogEstadistica" class="modal-dialog" role="document">
       <div class="modal-content">
@@ -1432,7 +1432,7 @@
     </div>
   </div>
   <!-- dragable modal Reporte Mapas Base -->
-  <div class="dragable_modal" id="modalMapaBase" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="dragable_modal" id="modalMapaBase" role="dialog" aria-labelledby="myModalLabel2">
     <div id="dialogMapa" class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header card-header btn-toolbar p-0 pl-1 dragable_touch">
